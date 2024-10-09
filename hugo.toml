@@ -1,1 +1,10 @@
+baseURL = 'https://electrikserpentine.github.io/'
+languageCode = 'en-us'
+title = 'Electrik⚡️Serpentine'
 theme = 'ananke'
+
+[params]
+	subtitle = 'The Serpent'
+	[params.contact]
+	  email = 'scribblelyts@gmail.com'
+	  
