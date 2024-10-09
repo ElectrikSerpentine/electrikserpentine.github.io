@@ -2,18 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Electrik⚡️Serpentine</title>
-    <link>http://localhost:1313/</link>
+    <link>https://electrikserpentine.github.io/</link>
     <description>Recent content on Electrik⚡️Serpentine</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Oct 2024 02:41:17 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>scribblelyts@gmail.com ( Mila)</managingEditor>
+    <webMaster>scribblelyts@gmail.com ( Mila)</webMaster>
+    <lastBuildDate>Wed, 09 Oct 2024 01:32:42 -0700</lastBuildDate>
+    <atom:link href="https://electrikserpentine.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://electrikserpentine.github.io/about/about/</link>
+      <pubDate>Wed, 09 Oct 2024 01:32:42 -0700</pubDate><author>scribblelyts@gmail.com ( Mila)</author>
+      <guid>https://electrikserpentine.github.io/about/about/</guid>
+      <description>&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
     <item>
       <title>Fuck My Balls</title>
-      <link>http://localhost:1313/posts/fuck-my-balls/</link>
-      <pubDate>Tue, 08 Oct 2024 02:41:17 -0700</pubDate>
-      <guid>http://localhost:1313/posts/fuck-my-balls/</guid>
-      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;This is &lt;strong&gt;bold&lt;/strong&gt; text, and this is &lt;em&gt;emphasized&lt;/em&gt; text.&lt;/p&gt;&#xA;&lt;p&gt;Visit the &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; website!&lt;/p&gt;</description>
+      <link>https://electrikserpentine.github.io/posts/fuck-my-balls/</link>
+      <pubDate>Tue, 08 Oct 2024 02:41:17 -0700</pubDate><author>scribblelyts@gmail.com ( Mila)</author>
+      <guid>https://electrikserpentine.github.io/posts/fuck-my-balls/</guid>
+      <description>&lt;p&gt;Well; this is literally just the beginning of this blog.&#xA;So we&amp;rsquo;ll get into introductions later down the road.&#xA;for starters - Welcome .&#xA;Now enjoy &amp;lt;3&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

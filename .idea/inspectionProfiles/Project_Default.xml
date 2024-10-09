@@ -1,0 +1,39 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="19">
+            <item index="0" class="java.lang.String" itemvalue="rtl" />
+            <item index="1" class="java.lang.String" itemvalue="text_color" />
+            <item index="2" class="java.lang.String" itemvalue="post_content_classes" />
+            <item index="3" class="java.lang.String" itemvalue="(.Date.Format" />
+            <item index="4" class="java.lang.String" itemvalue="`" />
+            <item index="5" class="java.lang.String" itemvalue="`datetime" />
+            <item index="6" class="java.lang.String" itemvalue="printf" />
+            <item index="7" class="java.lang.String" itemvalue="{{" />
+            <item index="8" class="java.lang.String" itemvalue="bg-black" />
+            <item index="9" class="java.lang.String" itemvalue="bg-black-60" />
+            <item index="10" class="java.lang.String" itemvalue="pageTitle" />
+            <item index="11" class="java.lang.String" itemvalue="send" />
+            <item index="12" class="java.lang.String" itemvalue="inputClasses" />
+            <item index="13" class="java.lang.String" itemvalue="labelClasses" />
+            <item index="14" class="java.lang.String" itemvalue="body_classes" />
+            <item index="15" class="java.lang.String" itemvalue="," />
+            <item index="16" class="java.lang.String" itemvalue="partialCached" />
+            <item index="17" class="java.lang.String" itemvalue="with" />
+            <item index="18" class="java.lang.String" itemvalue="{{-" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownBooleanAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <myValues>
+        <item value="defer" />
+        <item value="required" />
+      </myValues>
+    </inspection_tool>
+  </profile>
+</component>

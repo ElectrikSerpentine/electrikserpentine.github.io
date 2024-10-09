@@ -1,13 +1,12 @@
 ---
 title: "Fuck My Balls"
 date: 2024-10-08T02:41:17-07:00
-tags: []
+tags: [welcome thebeginning]
 featured_image: ""
-description: ""
+description: "intro #1"
 ---
 
-## Introduction
-
-This is **bold** text, and this is *emphasized* text.
-
-Visit the [Hugo](https://gohugo.io) website!
+Well; this is literally just the beginning of this blog.
+So we'll get into introductions later down the road. 
+for starters - Welcome . 
+Now enjoy <3 
