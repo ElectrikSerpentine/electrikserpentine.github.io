@@ -1,0 +1,23 @@
+{{ $title := .Title }}
+{{ $url := printf "%s" .Permalink | absLangURL }}
+
+{{ $facebook_href := printf "https://www.facebook.com/sharer.php?u=%s" $url }}
+{{ $twitter_href := printf "https://twitter.com/intent/tweet?url=%s&text=%s" $url $title }}
+{{ $linkedin_href := printf "https://www.linkedin.com/shareArticle?mini=true&url=%s&title=%s" $url $title }}
+{{ $hrefs := dict "facebook" $facebook_href "twitter" $twitter_href "linkedin" $linkedin_href }}
+
+{{ $services := where (partialCached "func/socials/Get" "socials/Get") "share" true }}
+{{ if not ($.Param "disable_share") }}
+  <div id="sharing" class="mt3">
+    {{ range $service := $services }}
+      {{ if $service.share }}
+        {{ $href := index $hrefs $service.name }}
+        {{ $service_name := $service.name }}
+        <a href="{{ $href }}" target="_blank" rel="noopener" class="btn btn-default mr3 mb3" title="Share on {{ $service_name | title }}">
+          {{ partial "svg/social-icons" $service_name }}
+          Share on {{ $service_name | title }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

@@ -1,0 +1,90 @@
+## BASIC CONFIGURATION
+baseURL = 'https://electrikserpentine.github.io/'
+title = 'Electrik⚡️Serpentine'
+languageCode = 'en-us'
+theme = 'ananke'
+
+[module]
+[[module.imports]]
+  path = "github.com/theNewDynamic/gohugo-theme-ananke"
+
+[menu]
+	[[menu.main]]
+	 name = "Home"
+	 url = "/"
+	 weight = 1
+	 pre = "home"
+	[[menu.main]]
+	 identifier = "blog"
+	 name = "Elektron⚡Ophis"
+	 weight = 2
+	 url = "/blog"
+	[[menu.main]]
+	 identifier = "about"
+	 name = "The Serpent"
+	 weight = 3
+	 url = "/about"
+	[[menu.main]]
+	 identifier = "contact"
+	 name = "Ophis⚡"
+	 weight = 4
+	 url = "/contact" 
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+## BASIC CONTENT MANAGEMENT 
+readingTime = true # Show reading time on post page
+published = true # show published data on post page
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 6
+enableRobotsTXT = true
+
+## ENABLE ALL DEFAULT CONTENT TYPES
+[outputs]
+	home = ["HTML", "RSS"]
+  blog = ["HTML", "RSS"]
+  content = ["HTML", "RSS"]
+  about = ["HTML", "RSS"]
+
+
+[sitemap]
+	changefreq = "monthly"
+	priority = 0.5
+	filename = "sitemap.xml"
+
+[params]
+	author = "Mila"
+	email = "scribblelyts@gmail.com"
+	env = "production"
+	text_color = ""
+	favicon = "/favicon.ico"
+	site_logo = ""
+	description = "Fucking Around & Finding Out; "
+	background_color_class = "bg-near-black"
+	recent_posts_number = 2
+
+[services.googleAnalytics]
+	ID = "'G-J9839Z36YT"
+
+[services]
+	[services.disqus]
+	 shortname = 'electrikserpentine-github-io'
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/electrikyouthh"
+target = "_blank"
+aria = "Github Profile"
+
+[[params.social]]
+key = 1
+name = "instagram"
+url = "https://instagram.com/electrikyouthx"
+aria = "Instagram"
+	  
