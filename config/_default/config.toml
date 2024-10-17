@@ -16,7 +16,7 @@ theme = 'ananke'
 	 pre = "home"
 	[[menu.main]]
 	 identifier = "blog"
-	 name = "Elektron⚡Ophis"
+	 name = "istológio"
 	 weight = 2
 	 url = "/blog"
 	[[menu.main]]
@@ -62,7 +62,7 @@ enableRobotsTXT = true
 	email = "scribblelyts@gmail.com"
 	env = "production"
 	text_color = ""
-	favicon = "/favicon.ico"
+	favicon = "/images//favicon.ico"
 	site_logo = ""
 	description = "Fucking Around & Finding Out; "
 	background_color_class = "bg-near-black"
