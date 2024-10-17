@@ -10,10 +10,14 @@ type: "static"
 ---
 
 
- Hey,High, Hi.
+  Hey,High, Hi.
 	![Electrik Serpentine](/images/intro.JPG)
-	- the names Mila🖤
-	- 30 years old
-	- && living in my head most of the time.
-	- Currently developing this site just as a mean to improve && show off my skills.
-	
+
+- the names Mila🖤 
+- Feline✌🏼😽
+- 30 years old 
+- && living inside my head majority of the time.
+- ♋︎
+- Currently developing this site just as a mean to improve && show off my skills.
+
+{{< audio "TanerelleIWish.mp3" >}}

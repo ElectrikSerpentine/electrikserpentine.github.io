@@ -1,0 +1,13 @@
+{{ $audio := .Page.Resources.GetMatch (.Get 0) }}
+{{ if not $audio }}
+    {{ $audio = resources.Get (printf "media/%s" (.Get 0)) }}
+{{ end }}
+
+{{ if $audio }}
+<audio controls preload="metadata">
+    <source src="{{ $audio.RelPermalink }}" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+{{ else }}
+<p>Error: Audio file not found.</p>
+{{ end }}
