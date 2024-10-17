@@ -6,4 +6,9 @@ tags: "content"
 type: "static"
 ---
 
+<div style="text-align: center;">
+    <img src="/images/welcome-banner.png" alt="Welcome banner" style="max-width: 100%; height: auto;">
+</div>
+
+
 And this is where  the content of my blog post would go

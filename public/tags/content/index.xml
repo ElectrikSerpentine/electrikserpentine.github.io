@@ -13,7 +13,7 @@
       <link>http://localhost:1313/blog/</link>
       <pubDate>Tue, 15 Oct 2024 10:13:26 -0700</pubDate>
       <guid>http://localhost:1313/blog/</guid>
-      <description>&lt;p&gt;And this is where  the content of my blog post would go&lt;/p&gt;</description>
+      <description>&lt;!-- raw HTML omitted --&gt;&#xA;&lt;p&gt;And this is where  the content of my blog post would go&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

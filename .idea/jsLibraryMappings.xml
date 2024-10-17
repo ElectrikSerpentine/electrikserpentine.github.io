@@ -2,6 +2,7 @@
 <project version="4">
   <component name="JavaScriptLibraryMappings">
     <file url="PROJECT" libraries="{@types/sass, @types/utf-8-validate, @types/utf8, api, commento}" />
+    <includedPredefinedLibrary name="HTTP Pre-Request and Response Handler" />
     <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
