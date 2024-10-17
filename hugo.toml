@@ -77,7 +77,7 @@ enableRobotsTXT = true
   	]
 
 [services.googleAnalytics]
-	ID = "'G-J9839Z36YT"
+	ID = "G-J9839Z36YT"
 
 [services]
 	[services.disqus]
