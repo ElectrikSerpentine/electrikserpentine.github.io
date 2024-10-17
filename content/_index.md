@@ -1,5 +1,5 @@
 ---
-title: "Welcome to Electrik Serpentine"
+title: "Electrik⚡️Serpentine"
 description: "The Serpents Lair of Knowledge & Musings"
 ---
 

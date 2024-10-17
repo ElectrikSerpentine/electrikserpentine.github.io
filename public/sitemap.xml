@@ -2,81 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://electrikserpentine.github.io/tags/about/</loc>
+    <loc>http://localhost:1313/tags/about/</loc>
     <lastmod>2024-10-16T10:55:53-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/tags/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-10-16T10:55:53-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/about/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-10-16T10:55:53-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-10-16T10:55:53-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2024-10-15T10:13:26-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/tags/content/</loc>
+    <loc>http://localhost:1313/tags/content/</loc>
     <lastmod>2024-10-15T10:13:26-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/tags/contact/</loc>
+    <loc>http://localhost:1313/tags/contact/</loc>
     <lastmod>2024-10-09T01:32:42-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2024-10-09T01:32:42-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/blog/fuck-my-balls/</loc>
+    <loc>http://localhost:1313/blog/fuck-my-balls/</loc>
     <lastmod>2024-10-08T02:41:17-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/tags/welcome/</loc>
+    <loc>http://localhost:1313/tags/welcome/</loc>
     <lastmod>2024-10-08T02:41:17-07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/blog/_index-2/</loc>
+    <loc>http://localhost:1313/6/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/6/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/categories/</loc>
+    <loc>http://localhost:1313/en/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/en/</loc>
+    <loc>http://localhost:1313/main/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/main/</loc>
+    <loc>http://localhost:1313/series/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://electrikserpentine.github.io/series/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://electrikserpentine.github.io/true/</loc>
+    <loc>http://localhost:1313/true/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

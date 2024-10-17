@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Contact on Electrik⚡️Serpentine</title>
-    <link>https://electrikserpentine.github.io/tags/contact/</link>
+    <link>http://localhost:1313/tags/contact/</link>
     <description>Recent content in Contact on Electrik⚡️Serpentine</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Oct 2024 01:32:42 -0700</lastBuildDate>
-    <atom:link href="https://electrikserpentine.github.io/tags/contact/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/contact/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Elektron⚡</title>
-      <link>https://electrikserpentine.github.io/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Wed, 09 Oct 2024 01:32:42 -0700</pubDate>
-      <guid>https://electrikserpentine.github.io/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;p&gt;and this is where y&amp;rsquo;all can find information&#xA;on how to get a hold of me. But as of right now.&#xA;to be conintued.&lt;/p&gt;</description>
     </item>
   </channel>

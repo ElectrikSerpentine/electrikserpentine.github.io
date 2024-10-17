@@ -41,9 +41,9 @@
 
 {{ end }}
 
-{{/* We look for any custom css files registered by the user under `site.params.custom_css and if found in the theme's
+{{/* We look for any custom css files registered by the user under `.Site.Params.custom_css and if found in the theme's
 css asset directory we (unless condition below) add to aforementioned slice */}}
-{{ with site.Params.custom_css }}
+{{ with .Site.Params.custom_css }}
   {{ range . }}
     {{ with partialCached "func/style/GetResource" . . }}
       {{ if eq .MediaType.SubType "x-scss" "x-sass" "scss" "sass" }}

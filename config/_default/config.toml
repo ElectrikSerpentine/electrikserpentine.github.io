@@ -30,6 +30,9 @@ theme = 'ananke'
 	 weight = 4
 	 url = "/contact" 
 
+[permalinks]
+	blog = "/blog/:slug/"
+
 # Taxonomies
 [taxonomies]
   category = "categories"
@@ -37,8 +40,8 @@ theme = 'ananke'
   series = "series"
 
 ## BASIC CONTENT MANAGEMENT 
-readingTime = true # Show reading time on post page
-published = true # show published data on post page
+readingTime = true
+published = true 
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
 Paginate = 6
@@ -47,9 +50,10 @@ enableRobotsTXT = true
 ## ENABLE ALL DEFAULT CONTENT TYPES
 [outputs]
 	home = ["HTML", "RSS"]
-  blog = ["HTML", "RSS"]
-  content = ["HTML", "RSS"]
-  about = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+  page = ["HTML"]
 
 
 [sitemap]
@@ -62,11 +66,15 @@ enableRobotsTXT = true
 	email = "scribblelyts@gmail.com"
 	env = "production"
 	text_color = ""
-	favicon = "/images//favicon.ico"
+	favicon = "/images/favicon-48x48.png"
 	site_logo = ""
 	description = "Fucking Around & Finding Out; "
 	background_color_class = "bg-near-black"
 	recent_posts_number = 2
+  ananke_socials = [
+  	{name = 'github', url = "https://github.com/electrikyouthh"},
+  	{name = 'instagram', url = "https://instagram.com/electrikyouthx"}
+  	]
 
 [services.googleAnalytics]
 	ID = "'G-J9839Z36YT"
@@ -75,16 +83,4 @@ enableRobotsTXT = true
 	[services.disqus]
 	 shortname = 'electrikserpentine-github-io'
 
-[[params.social]]
-key = 0
-name = "github"
-url = "https://github.com/electrikyouthh"
-target = "_blank"
-aria = "Github Profile"
-
-[[params.social]]
-key = 1
-name = "instagram"
-url = "https://instagram.com/electrikyouthx"
-aria = "Instagram"
 	  

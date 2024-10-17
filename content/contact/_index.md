@@ -2,7 +2,7 @@
 aliases: = [contact]
 title: "Elektron⚡"
 date: 2024-10-09T01:32:42-07:00
-tags: [Contact ]
+tags: [ Contact ]
 description: "Contact"
 type: "static"
 ---
