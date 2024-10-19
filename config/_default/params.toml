@@ -9,6 +9,8 @@ colorScheme = "fire"
 defaultAppearance = "dark" 
 autoSwitchAppearance = false
 
+defaultThemeColor = "#FFFFFF"
+
 enableSearch = false
 enableCodeCopy = false
 enableImageLazyLoading = true
@@ -19,7 +21,7 @@ enableQuicklink = true
 fingerprintAlgorithm = "sha256"
 
 [header]
-  layout = "basic" # valid options: basic, hamburger, hybrid, custom
+  layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
   # logo = ""
   # logoDark = ""
   showTitle = true
@@ -42,14 +44,14 @@ fingerprintAlgorithm = "sha256"
   showBreadcrumbs = true
   showDraftLabel = true
   showEdit = false
-  editURL = "https://github.com/jpanther/congo/tree/dev/exampleSite/content/"
+ # editURL = "https://github.com/jpanther/congo/tree/dev/exampleSite/content/"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
   invertPagination = false
   showReadingTime = true
   showTableOfContents = true
-  showTaxonomies = false
+  showTaxonomies = true
   showWordCount = false
   showComments = false
  # sharingLinks = ["github", "instagram", "mastodon", "email", "telegram",]
