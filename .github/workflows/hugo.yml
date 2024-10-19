@@ -39,11 +39,6 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.136.2'
-      - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
