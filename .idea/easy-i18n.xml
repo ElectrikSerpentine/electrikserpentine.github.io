@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectSettingsService">
+    <option name="localesDirectory" value="" />
+    <option name="folderStrategy" value="MODULARIZED_NAMESPACE" />
+    <option name="parserStrategy" value="YML" />
+    <option name="filePattern" value="*.yml" />
+    <option name="defaultNamespace" value="" />
+  </component>
+</project>

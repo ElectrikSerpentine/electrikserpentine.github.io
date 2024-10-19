@@ -1,0 +1,6 @@
+github.com/jpanther/congo/v2 v2.9.0 h1:mq1U8Zqw/F+9dk+AgH7W6Wl2M4LLiRP4v/BCTx4c01Y=
+github.com/jpanther/congo/v2 v2.9.0/go.mod h1:1S7DRoO1ZYS4YUdFd1LjTkdyjQwsjFWd8TqSfz3Jd+M=
+github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018085445-363bd2e656f0 h1:9SwGX6wJr6eSwRqnf0FSTB2sLCSkkZkbIheVrc7jCCg=
+github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018085445-363bd2e656f0/go.mod h1:0q1aCjcm5/5i0y9Gm+sdQQVIoh+5+IWX/RZOzys4DmA=
+github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018091752-6e465653ec8d h1:vu0IwypFvZEUJTB5P81MEWnHTQB5WVB4FJAFhQR/cCA=
+github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018091752-6e465653ec8d/go.mod h1:0q1aCjcm5/5i0y9Gm+sdQQVIoh+5+IWX/RZOzys4DmA=

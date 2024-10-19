@@ -1,0 +1,9 @@
+{{ with .Site.Taxonomies.social }}
+<div class="social-links">
+  {{ range . }}
+    <a href="{{ .Page.Params.url }}" target="_blank" rel="noopener noreferrer" class="social-link">
+      {{ .Page.Title }}
+    </a>
+  {{ end }}
+</div>
+{{ end }}

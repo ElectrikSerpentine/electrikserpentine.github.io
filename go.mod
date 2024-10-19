@@ -1,0 +1,10 @@
+module github.com/electrikserpentine/electrikserpentine.github.io
+
+go 1.23
+
+toolchain go1.23.2
+
+require (
+	github.com/jpanther/congo/v2 v2.9.0 // indirect
+	github.com/theNewDynamic/gohugo-theme-ananke v0.0.0-20241018091752-6e465653ec8d // indirect
+)

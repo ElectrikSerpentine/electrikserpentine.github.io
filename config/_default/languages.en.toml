@@ -1,0 +1,23 @@
+languageCode = "en-US"
+languageName = "English (United Kingdom)"
+languageDirection = "ltr"
+weight = 1
+
+title = 'Electrik⚡️Serpentine'
+
+
+[params]
+  dateFormat = "2 January 2006"
+
+  mainSections = ["home", "posts", "blog", "contact"]
+  description = "A Collection of my Thoughts & Musings"
+
+[params.author]
+  name = "Electrik⚡️Serpentine"
+  image = "/images/intro.JPG"
+  headline = "Fucking Around & Finding Out; "
+  bio = "Meow. :cat"
+  links = [
+    { github = "https://github.com/electrikyouthh/" },
+    { instagram = "https://instagram.com/electrikyouthx" },
+  ]

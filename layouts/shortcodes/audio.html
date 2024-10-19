@@ -1,0 +1,35 @@
+{{ $audio := .Page.Resources.GetMatch (.Get 0) }}
+{{ if not $audio }}
+    {{ $audio = resources.Get (printf "media/%s" (.Get 0)) }}
+{{ end }}
+
+{{ $autoplay := .Get 1 | default false }}
+
+{{ if $audio }}
+<div class="audio-player">
+    <audio {{ if $autoplay }}autoplay muted{{ end }} controls preload="metadata">
+        <source src="{{ $audio.RelPermalink }}" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    {{ if $autoplay }}
+    <button onclick="toggleMute(this)">Unmute</button>
+    {{ end }}
+</div>
+
+{{ if $autoplay }}
+<script>
+function toggleMute(button) {
+    var audio = button.previousElementSibling;
+    if (audio.muted) {
+        audio.muted = false;
+        button.textContent = 'Mute';
+    } else {
+        audio.muted = true;
+        button.textContent = 'Unmute';
+    }
+}
+</script>
+{{ end }}
+{{ else }}
+<p>Error: Audio file not found.</p>
+{{ end }}

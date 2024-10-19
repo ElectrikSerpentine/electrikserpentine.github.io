@@ -1,0 +1,11 @@
+{{ $icon_size := "32px" }}
+{{ range $term := .Site.Taxonomies.social }}
+  {{ $icon := partial "func/socials/GetServiceIcon" $term.Page.Title }}
+  <a href="{{ $term.Page.Params.url }}" target="_blank" rel="noopener" class="link-transition social link mr3" title="{{ $term.Page.Title }}">
+    {{ with $icon }}
+      <span class="icon" style="width: {{$icon_size}}; height: {{$icon_size}};">{{ . | safeHTML }}</span>
+    {{ else }}
+      {{ $term.Page.Title }}
+    {{ end }}
+  </a>
+{{ end }}

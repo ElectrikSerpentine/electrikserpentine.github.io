@@ -1,0 +1,85 @@
+## BASIC CONFIGURATION
+baseURL = 'https://electrikserpentine.github.io/'
+title = 'Electrik⚡️Serpentine'
+languageCode = 'en-us'
+theme = 'ananke'
+
+[module]
+[[module.imports]]
+  path = "github.com/theNewDynamic/gohugo-theme-ananke"
+
+[params]
+	env = "production"
+	text_color = "dark-gray"
+	favicon = "/images/favicon-48x48.png"
+	site_logo = ""
+	description = "Fucking Around & Finding Out; "
+	background_color_class = "bg-near-black"
+	recent_posts_number = 3
+	mainSections = ["posts", "blog", "about", "contact"] 
+	ananke_socials = [
+    {name = "instagram", url = "https://instagram.com/electrikyouthx", label = "Instagram"},
+    {name = "github", url = "https://github.com/electrikyouthh", label = "GitHub"}
+  ]
+
+[menu]
+	[[menu.main]]
+	 name = "Home"
+	 url = "/"
+	 weight = 1
+	 pre = "home"
+	[[menu.main]]
+	 identifier = "blog"
+	 name = "istológio"
+	 weight = 2
+	 url = "/blog"
+	[[menu.main]]
+	 identifier = "about"
+	 name = "The Serpent"
+	 weight = 3
+	 url = "/about"
+	[[menu.main]]
+	 identifier = "contact"
+	 name = "Ophis⚡"
+	 weight = 4
+	 url = "/contact" 
+
+[permalinks]
+	blog = "/blog/:slug/"
+
+# Taxonomies
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+  social = "social"
+
+## BASIC CONTENT MANAGEMENT 
+readingTime = true 
+published = true 
+DefaultContentLanguage = "en"
+SectionPagesMenu = "main"
+Paginate = 9
+enableRobotsTXT = true
+enableEmoji = true
+
+## ENABLE ALL DEFAULT CONTENT TYPES
+[outputs]
+	home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+  page = ["HTML"]
+
+
+[sitemap]
+	changefreq = "monthly"
+	priority = 0.5
+	filename = "sitemap.xml"
+
+[services.googleAnalytics]
+	ID = "G-J9839Z36YT"
+
+[services]
+	[services.disqus]
+	 shortname = 'electrikserpentine-github-io'
