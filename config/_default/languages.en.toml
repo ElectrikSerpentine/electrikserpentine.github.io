@@ -9,7 +9,7 @@ title = 'Electrik⚡️Serpentine'
 [params]
   dateFormat = "2 January 2006"
 
-  mainSections = ["home", "posts", "blog", "contact"]
+  mainSections = ["home", "blog", "contact"]
   description = "A Collection of my Thoughts & Musings"
 
 [params.author]
