@@ -1,0 +1,9 @@
+{{ define "main" }}
+  <article>
+    <h1 class="custom-heading">{{ .Title }}</h1>
+    <div class="custom-box">
+      {{ .Content }}
+    </div>
+    <a href="{{ .Site.BaseURL }}" class="custom-link">Back to Home</a>
+  </article>
+{{ end }}

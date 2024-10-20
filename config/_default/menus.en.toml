@@ -13,34 +13,34 @@
 [[main]]
   name = "Home"
   url = "/"
-  weight = 1
+  weight = 10
 
 [[main]]
   name = "istológio"
   pageRef = "blog"
   url = "/blog/"
-  weight = 2
+  weight = 20
 
 [[main]]
   name = "The Serpent"
   pageRef = "about"
   url = "/about/"
-  weight = 3
+  weight = 30
 
 [[main]]
-  identifier = "Ophis⚡"
+  name = "Ophis⚡"
   pageRef = "contact"
   url = "/contact/"
-  weight = 4
+  weight = 40
 
 [[permalinks]]
   blog = "/blog/:slug"
-  
+
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
-# [[footer]]
-#   name = "Tags"
-#   pageRef = "tags"
-#   weight = 10
+[[footer]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 50

@@ -1,0 +1,7 @@
+<link rel="stylesheet" href="https://use.typekit.net/aps1owv.css">
+
+{{ $custom := resources.Get "css/custom.css" }}
+{{ if $custom }}
+  {{ $style := $custom | resources.Minify | resources.Fingerprint "sha512" }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}

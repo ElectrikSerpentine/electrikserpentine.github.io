@@ -1,8 +1,9 @@
 ---
 title: "Fuck My Balls"
 date: 2024-10-08T02:41:17-07:00
-tags: "welcome"
-description: "intro 1"
+tags: ["welcome", "first blog post", "bangbang"]
+categories: ["first blog", "intro"]
+description: "intro blog"
 ---
 
 Well - this is literally just the beginning of this blog.
