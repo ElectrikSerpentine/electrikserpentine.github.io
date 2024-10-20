@@ -6,8 +6,8 @@ tags: ["content"]
 type: "static"
 ---
 
-![Electrik Serpentine](/images/welcome-banner.png)
+<center>![Electrik Serpentine](/images/welcome-banner.png)</center>
 
--Welcome to the blog part of my website.
-this is literally where all of my post will be going & what not. 
+<br> - Welcome to the blog part of my website. </br>
+<br> - Where you can find all of my post! </br>
 

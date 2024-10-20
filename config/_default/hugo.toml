@@ -25,6 +25,11 @@ enableEmoji = true
   term = ["HTML", "RSS"]
   page = ["HTML"]
 
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 [services.googleAnalytics]
   ID = "G-J9839Z36YT"
 
