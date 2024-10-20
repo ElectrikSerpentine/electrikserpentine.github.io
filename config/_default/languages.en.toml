@@ -9,14 +9,14 @@ title = 'Electrik⚡️Serpentine'
 [params]
   dateFormat = "2 January 2006"
 
-  mainSections = ["home", "blog", "contact"]
+  mainSections = ["home", "blog", "contact", "posts", "social"]
   description = "A Collection of my Thoughts & Musings"
 
 [params.author]
   name = "Electrik⚡️Serpentine"
   image = "/images/intro.JPG"
   headline = "Fucking Around & Finding Out; "
-  bio = "Meow. :cat"
+  bio = "Meow. "
   links = [
     { github = "https://github.com/electrikyouthh/" },
     { instagram = "https://instagram.com/electrikyouthx" },

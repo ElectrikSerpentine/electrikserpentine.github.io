@@ -4,14 +4,14 @@
   
     
       <url>
-            <loc>https://electrikserpentine.github.io/</loc>
+            <loc>http://localhost:1313/</loc>
             <lastmod>2024-10-19T23:24:27-07:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>https://electrikserpentine.github.io/github.com/electrikyouthh</loc>
+            <loc>http://localhost:1313/posts/social/github/github/</loc>
             <lastmod>2024-10-19T23:24:27-07:00</lastmod>
           </url>
     
@@ -20,11 +20,9 @@
   
     
       <url>
-            <loc>https://electrikserpentine.github.io/instagram.com/electrikyouthx</loc>
+            <loc>http://localhost:1313/instagram.com/electrikyouthx</loc>
             <lastmod>2024-10-19T23:24:27-07:00</lastmod>
           </url>
-    
-  
     
   
     
@@ -33,14 +31,14 @@
   
     
       <url>
-            <loc>https://electrikserpentine.github.io/about/</loc>
+            <loc>http://localhost:1313/about/</loc>
             <lastmod>2024-10-16T10:55:53-07:00</lastmod>
           </url>
     
   
     
       <url>
-            <loc>https://electrikserpentine.github.io/posts/</loc>
+            <loc>http://localhost:1313/posts/</loc>
             <lastmod>2024-10-15T10:13:26-07:00</lastmod>
           </url>
     
@@ -55,7 +53,7 @@
   
     
       <url>
-            <loc>https://electrikserpentine.github.io/contact/</loc>
+            <loc>http://localhost:1313/contact/</loc>
             <lastmod>2024-10-09T01:32:42-07:00</lastmod>
           </url>
     
@@ -70,9 +68,11 @@
   
     
       <url>
-            <loc>https://electrikserpentine.github.io/posts/fudge-balls/fudge-my-balls/</loc>
+            <loc>http://localhost:1313/posts/fudge-balls/fudge-my-balls/</loc>
             <lastmod>2024-10-08T02:41:17-07:00</lastmod>
           </url>
+    
+  
     
   
     
