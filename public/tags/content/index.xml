@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Content on Electrik⚡️Serpentine</title>
-    <link>https://electrikserpentine.github.io/tags/content/</link>
+    <link>http://localhost:1313/tags/content/</link>
     <description>Recent content in Content on Electrik⚡️Serpentine</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Tue, 15 Oct 2024 10:13:26 -0700</lastBuildDate>
-    <atom:link href="https://electrikserpentine.github.io/tags/content/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/content/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>https://electrikserpentine.github.io/posts/</link>
+      <link>http://localhost:1313/posts/</link>
       <pubDate>Tue, 15 Oct 2024 10:13:26 -0700</pubDate>
-      <guid>https://electrikserpentine.github.io/posts/</guid>
+      <guid>http://localhost:1313/posts/</guid>
       <description>&lt;center&gt;![Electrik Serpentine](/images/welcome-banner.png)&lt;/center&gt;&#xA;&lt;p&gt;&lt;br&gt; - Welcome to the blog part of my website. &lt;/br&gt;&#xA;&lt;br&gt; - Where you can find all of my post! &lt;/br&gt;&lt;/p&gt;</description>
     </item>
   </channel>

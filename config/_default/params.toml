@@ -68,7 +68,10 @@ fingerprintAlgorithm = "sha256"
   showTermCount = true
 
 [customCSS]
-custom = ["css/custom.css"]
+  custom = ["css/custom.css"]
+
+[params]
+  customCSS = ["css/custom.css"]
 
 [services.googleAnalytics]
 googleAnalytics = "G-J9839Z36YT"

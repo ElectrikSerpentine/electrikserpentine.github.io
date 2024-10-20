@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Social on Electrik⚡️Serpentine</title>
-    <link>https://electrikserpentine.github.io/social/</link>
+    <link>http://localhost:1313/social/</link>
     <description>Recent content in Social on Electrik⚡️Serpentine</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <atom:link href="https://electrikserpentine.github.io/social/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/social/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
