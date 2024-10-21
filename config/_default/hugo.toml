@@ -36,3 +36,8 @@ enableEmoji = true
 [services]
   [services.disqus]
    shortname = 'electrikserpentine-github-io'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

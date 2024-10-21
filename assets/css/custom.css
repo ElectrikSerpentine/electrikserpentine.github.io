@@ -1,8 +1,8 @@
 /** fonts **/
 @import url("https://use.typekit.net/aps1owv.css");
 @import url("https://fonts.adobe.com/fonts/silver-streak-variable");
-@import url(https://db.onlinewebfonts.com/c/e4ad0e6cdc6519a4b0bb6048a5f6db41?family=LizaDisplayPro);
-
+@import url("https://db.onlinewebfonts.com/c/e4ad0e6cdc6519a4b0bb6048a5f6db41?family=LizaDisplayPro");
+@import url("https://db.onlinewebfonts.com/c/012be79707b88c26d140bca6f0baaf82?family=Nelo");
 
 /* Oi font */
 .font-oi {
@@ -39,10 +39,18 @@
   font-style: normal;
 }
 
-/* Silver Streak Variable */
-.font-silver-streak-variable {
-  font-family: "silver-streak-variable",sans-serif;
-  font-variation-settings: 'wdth' 100, 'wght' 400;
+/* Nelo font */
+@font-face {
+    font-family: "Nelo";
+    src: url("012be79707b88c26d140bca6f0baaf82.eot");
+    src: url("012be79707b88c26d140bca6f0baaf82.eot?#iefix")format("embedded-opentype"),
+         url("012be79707b88c26d140bca6f0baaf82.woff")format("woff"),
+         url("012be79707b88c26d140bca6f0baaf82.woff2")format("woff2"),
+         url("012be79707b88c26d140bca6f0baaf82.ttf")format("truetype"),
+         url("012be79707b88c26d140bca6f0baaf82.svg#Nelo")format("svg");
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
 }
 
 /* Define the Liza font */
@@ -358,4 +366,69 @@
   height: 3px;
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045); /* Instagram gradient */
   margin: 10px auto 0;
+}
+
+/** nelo font **/ 
+@font-face {
+  font-family: 'Nelo';
+  src: url('/fonts/nelo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-nelo {
+  font-family: 'Nelo', sans-serif;
+  font-size: 120%; /* makes all nelo font 20% bigger */
+}
+
+.big-title {
+  font-size: 8rem; /* increased from 6rem to 8rem (128px) */
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+.media (max-width: 768px) {
+  .big-title {
+    font-size: 5rem; /* slightly smaller on mobile devices */
+    }
+}
+
+/* Make other headings bigger too */
+.prose h2 {
+  font-size: 3.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.prose h3 {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Adjust paragraph and list item size for better readability */
+.prose p, .prose li {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.8;
+}
+
+/** image shit **/
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .responsive-image {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .responsive-image {
+        max-width: 70%;
+    }
 }

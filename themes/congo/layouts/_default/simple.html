@@ -5,8 +5,9 @@
         {{ partial "breadcrumbs.html" . }}
       {{ end }}
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        <h1 class="title">
         {{ .Title | emojify }}
-      </h1>
+      </h1></h1>
     </header>
     <section class="prose mt-6 max-w-full dark:prose-invert">
       {{ .Content | emojify }}
