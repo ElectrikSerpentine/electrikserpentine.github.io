@@ -1,0 +1,23 @@
+languageCode = "en-US"
+languageName = "English"
+languageDirection = "ltr"
+weight = 1
+
+title = 'Electrik⚡️Serpentine'
+copyright = 'E⚡️S'
+
+[params]
+  dateFormat = "14 November 2024"
+
+  mainSections = ["home", "blog", "contact", "posts", "social", "about", "content"]
+  description = "A Collection of my Thoughts & Musings"
+
+[params.author]
+  name = "Electrik⚡️Serpentine"
+  image = "/images/intro.jpg"
+  headline = "A Collection; "
+  bio = "Meow. "
+  links = [
+    { github = "https://github.com/electrikyouthh/" },
+    { instagram = "https://instagram.com/electrikyouthx" },
+  ]

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="599664bf-3f0d-4386-992b-884eb1a400ce" name="Changes" comment="adding a few more stuff." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GitLabDefaultAccount">
+    <option name="defaultAccountId" value="2e828a6d-dc25-4ea4-b220-76c1041c4bdc" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1728983534" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/themes/ananke" />
+            </RecentBranchesForRepo>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1731078511" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feauture-branch" />
+                    <option name="lastUsedInstant" value="1731078431" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jpanther/congo.git&quot;,
+    &quot;accountId&quot;: &quot;b8b835fb-bed2-420d-9d04-d50340e240b2&quot;
+  }
+}</component>
+  <component name="HugoPluginSettings">
+    <option name="customHugoPath" value="$USER_HOME$/go/bin/hugo" />
+    <option name="defaultHugoNewOptions" value="" />
+    <option name="useCustomPath" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;00000072&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2nB4lcg66ghpEmAy6Xgtnzno8qU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Node.js.postcss.config.js.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.17.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.6&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/electrik/Documents/GitHub/electrikserpentine.github.io/layouts&quot;,
+    &quot;localPrefix&quot;: &quot;&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/electrik/Documents/GitHub/electrikserpentine.github.io/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/layouts" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="postcss.config.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/postcss.config.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.postcss.config.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="SwiftWorkspaceSettings">
+    <option name="detectedToolchain" value="true" />
+    <option name="toolchainPathValue" value="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="599664bf-3f0d-4386-992b-884eb1a400ce" name="Changes" comment="" />
+      <created>1728433287338</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728433287338</updated>
+      <workItem from="1728433289708" duration="54000" />
+      <workItem from="1728433808257" duration="1806000" />
+      <workItem from="1728435640101" duration="285000" />
+      <workItem from="1728435947306" duration="32000" />
+      <workItem from="1728436000165" duration="7666000" />
+      <workItem from="1728505681351" duration="6924000" />
+      <workItem from="1728982503965" duration="84000" />
+      <workItem from="1728982626892" duration="600000" />
+      <workItem from="1728984670392" duration="4544000" />
+      <workItem from="1728992539850" duration="6217000" />
+      <workItem from="1729011185208" duration="16572000" />
+      <workItem from="1729135747783" duration="703000" />
+      <workItem from="1729136785372" duration="33000" />
+      <workItem from="1729137977033" duration="12125000" />
+      <workItem from="1729164161065" duration="9933000" />
+      <workItem from="1729209818327" duration="22189000" />
+      <workItem from="1729375763895" duration="2645000" />
+      <workItem from="1729849428945" duration="593000" />
+      <workItem from="1729899830269" duration="8557000" />
+      <workItem from="1729984608797" duration="645000" />
+      <workItem from="1730127605211" duration="3416000" />
+      <workItem from="1730173116837" duration="7845000" />
+      <workItem from="1730270159498" duration="6434000" />
+      <workItem from="1730289181588" duration="25352000" />
+      <workItem from="1730654257882" duration="33177000" />
+      <workItem from="1730745064565" duration="706000" />
+      <workItem from="1730746376788" duration="3724000" />
+      <workItem from="1730773096688" duration="4253000" />
+      <workItem from="1730803888895" duration="31222000" />
+      <workItem from="1730937163895" duration="1505000" />
+      <workItem from="1731002848738" duration="663000" />
+      <workItem from="1731003534668" duration="1810000" />
+      <workItem from="1731041134654" duration="7237000" />
+      <workItem from="1731078191906" duration="6658000" />
+      <workItem from="1731270744977" duration="16197000" />
+      <workItem from="1731446503223" duration="690000" />
+      <workItem from="1731447271790" duration="3251000" />
+      <workItem from="1731452221545" duration="22468000" />
+      <workItem from="1731601656106" duration="4040000" />
+    </task>
+    <task id="LOCAL-00001" summary="adding a few more stuff.">
+      <option name="closed" value="true" />
+      <created>1728437555370</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728437555371</updated>
+    </task>
+    <task id="LOCAL-00002" summary="adding a few more stuff.">
+      <option name="closed" value="true" />
+      <created>1728510915353</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728510915353</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding a few more stuff.">
+      <option name="closed" value="true" />
+      <created>1728510935450</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728510935450</updated>
+    </task>
+    <task id="LOCAL-00004" summary="adding a few more stuff.">
+      <option name="closed" value="true" />
+      <created>1729378661887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729378661887</updated>
+    </task>
+    <task id="LOCAL-00005" summary="adding a few more stuff.">
+      <option name="closed" value="true" />
+      <created>1729378671494</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1729378671494</updated>
+    </task>
+    <task id="LOCAL-00006" summary="adding a few more stuff.">
+      <option name="closed" value="true" />
+      <created>1730147217826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730147217827</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding a few more stuff.">
+      <option name="closed" value="true" />
+      <created>1730736717086</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730736717086</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/content" />
+      <path value="$PROJECT_DIR$/themes/ananke" />
+    </ignored-roots>
+    <MESSAGE value=".&#10;docs: changelog fixes&#10;&#10;Signed-off-by: Patrick Kollitsch &lt;patrick@davids-neighbour.com&gt;" />
+    <MESSAGE value="." />
+    <MESSAGE value="adding a few more stuff.&#10;&#10;Signed-off-by: electrikyouthh &lt;scribblelyts@gmail.com&gt;" />
+    <MESSAGE value="adding a few more stuff." />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a few more stuff." />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>

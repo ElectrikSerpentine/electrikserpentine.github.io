@@ -1,0 +1,18 @@
+# -- Site Configuration --
+
+theme = "congo"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+summaryLength = 0
+enableEmoji = true
+
+[pagination]
+  pagerSize = 15
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+  page = ["HTML"]

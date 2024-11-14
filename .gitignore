@@ -1,0 +1,17 @@
+# Hugo default output directory
+/public
+
+# Hugo cache directory
+/resources
+
+# Mac OS
+.DS_Store
+
+# Hugo lock file
+/.hugo_build.lock
+
+# Node modules (if you're using npm for any reason)
+node_modules/
+
+# Go modules cache
+/go.sum
