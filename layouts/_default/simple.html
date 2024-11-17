@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <style>
+    @import url("https://db.onlinewebfonts.com/c/1937982c863280980aab37c09b5cd917?family=Oi%21");    
+    .title-oi {
+      font-family: 'Oi', cursive;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+
+  <article class="max-w-full">
+    <header>
+      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default true) }}
+        {{ partial "breadcrumbs.html" . }}
+      {{ end }}
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral title-oi">
+        {{ .Title | emojify }}
+      </h1>
+    </header>
+    <section class="prose mt-6 max-w-full dark:prose-invert">
+      {{ .Content | emojify }}
+    </section>
+    <footer class="pt-8">
+      {{ partial "sharing-links.html" . }}
+    </footer>
+  </article>
+{{ end }}

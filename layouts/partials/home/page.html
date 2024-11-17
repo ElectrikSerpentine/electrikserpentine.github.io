@@ -1,0 +1,20 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+  
+  .title-satisfy {
+    font-family: 'Satisfy', cursive;
+    font-weight: 300;
+  }
+</style>
+
+<article class="prose max-w-full dark:prose-invert">
+  {{ with .Title }}
+    <header>
+      <h3 class="title-satisfy">{{ . | emojify }}</h3>
+    </header>
+  {{ end }}
+  <section>{{ .Content | emojify }}</section>
+</article>
+<section>
+  {{ partial "recent-articles.html" . }}
+</section>

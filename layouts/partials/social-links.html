@@ -1,0 +1,22 @@
+{{ with .Site.Taxonomies.social }}
+<div class="flex justify-center gap-x-4">
+  {{ range . }}
+    <a 
+      href="{{ .Page.Params.url }}" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="inline-block rounded-full hover:text-primary-500 hover:bg-primary-100 dark:hover:text-primary-400 dark:hover:bg-primary-800"
+      title="{{ .Page.Title }}"
+    >
+      {{ $icon := (partial "icon.html" (lower .Page.Title)) }}
+      {{ with $icon }}
+        <span class="icon" style="width: 32px; height: 32px;">
+          {{ . | safeHTML }}
+        </span>
+      {{ else }}
+        {{ .Page.Title }}
+      {{ end }}
+    </a>
+  {{ end }}
+</div>
+{{ end }}

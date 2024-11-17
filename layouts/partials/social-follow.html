@@ -1,0 +1,26 @@
+{{ $icon_size := "32px" }}
+
+{{ range $key, $value := .Site.Author.links }}
+  {{ $platform := $key }}
+  {{ $url := $value }}
+
+  {{ if $url }}
+    {{ $icon := (partial "icon.html" $platform) }}
+
+    <a 
+      href="{{ $url }}"
+      target="_blank"
+      rel="noopener noreferrer me"
+      title="{{ $platform | title }}"
+      class="inline-block rounded-full hover:text-primary-500 hover:bg-primary-100 dark:hover:text-primary-400 dark:hover:bg-primary-800 mr-3"
+    >
+      {{ with $icon }}
+        <span class="icon" style="width: {{ $icon_size }}; height: {{ $icon_size }};">
+          {{ . | safeHTML }}
+        </span>
+      {{ else }}
+        {{ $platform | title }}
+      {{ end }}
+    </a>
+  {{ end }}
+{{ end }}

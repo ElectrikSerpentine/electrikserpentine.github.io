@@ -1,0 +1,46 @@
+{{ define "main" }}
+  <article class="max-w-full prose dark:prose-invert">
+    <header class="text-center">
+      <h1 class="mt-0 mb-4 text-6xl font-extrabold text-cyan-300 font-yellowtail">
+        {{ .Site.Title }}
+      </h1>
+      <p class="text-2xl font-light text-yellow-300 italic font-satisfy">
+        Shahmaran
+      </h2>
+    </header>
+
+        A Collection of My Thoughts & Musings
+      </p>
+    </section>
+
+    {{ if .Site.Params.homepage.showRecent }}
+      <section class="mt-10">
+        <h2 class="text-2xl font-bold text-green-300">
+          Recent Posts
+        </h2>
+        <ul class="mt-4 space-y-4">
+          {{ range first .Site.Params.homepage.recentLimit (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+            <li>
+              <a href="{{ .Permalink }}" class="text-lg font-medium text-pink-300 hover:text-pink-200">
+                {{ .Title }}
+              </a>
+              <span class="block text-sm text-gray-400">
+                {{ .Date.Format "January 2, 2006" }}
+              </span>
+            </li>
+          {{ end }}
+        </ul>
+      </section>
+    {{ end }}
+
+    <section class="mt-10">
+      <h2 class="text-2xl font-bold text-purple-300">
+        Featured Content
+      </h2>
+      <!-- Add your featured content, projects, or any other sections you want to highlight -->
+      <p class="mt-4 text-gray-200">
+        Here you can add your featured content or projects.
+      </p>
+    </section>
+  </article>
+{{ end }}

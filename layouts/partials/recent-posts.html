@@ -1,0 +1,10 @@
+<div class="recent-posts">
+  <h2 class="custom-heading">Recent Posts</h2>
+  <ul>
+    {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+      <li>
+        <a href="{{ .Permalink }}" class="custom-link">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
