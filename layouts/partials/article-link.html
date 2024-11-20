@@ -1,0 +1,68 @@
+<article class="mb-8 flex flex-col md:flex-row items-start md:items-center">
+  {{- $images := $.Resources.ByType "image" }}
+  {{- $thumbnail := $images.GetMatch (.Params.thumbnail | default "*thumb*") }}
+  {{- $feature := $images.GetMatch (.Params.feature | default "*feature*") | default $thumbnail }}
+  {{- with $feature }}
+    <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+      <a
+        href="{{ with $.Params.externalUrl }}{{ . }}{{ else }}{{ $.RelPermalink }}{{ end }}"
+        aria-label="{{ $.Title | emojify }}"
+      >
+        <img
+          alt="{{ $.Params.featureAlt | default $.Params.thumbnailAlt | default "" }}"
+          {{ if eq .MediaType.SubType "svg" }}
+            class="w-full md:w-32 h-auto rounded-lg shadow-md"
+            src="{{ .RelPermalink }}"
+          {{ else }}
+            class="w-full md:w-32 h-auto rounded-lg shadow-md"
+            srcset="{{ (.Fill "256x192 smart").RelPermalink }} 1x, {{ (.Fill "512x384 smart").RelPermalink }} 2x"
+            src="{{ (.Fill "256x192 smart").RelPermalink }}"
+            width="256"
+            height="192"
+          {{ end }}
+          {{ if $.Site.Params.enableImageLazyLoading | default true }}
+            loading="lazy"
+          {{ end }}
+        />
+      </a>
+    </div>
+  {{- end }}
+  <div class="flex-grow">
+    <h3 class="text-xl font-semibold mb-2">
+      {{ with .Params.externalUrl }}
+        <a
+          class="text-primary-700 hover:text-primary-800 dark:text-primary-300 dark:hover:text-primary-200"
+          href="{{ . }}"
+          target="_blank"
+          rel="external noopener noreferrer"
+        >
+          {{ $.Title | emojify }}
+          <span class="text-xs align-top ml-1" title="{{ i18n "list.externalurl_title" }}">
+            <span class="rtl:hidden">&#8599;</span>
+            <span class="ltr:hidden">&#8598;</span>
+          </span>
+        </a>
+      {{ else }}
+        <a
+          class="text-primary-700 hover:text-primary-800 dark:text-primary-300 dark:hover:text-primary-200"
+          href="{{ .RelPermalink }}"
+        >
+          {{ .Title | emojify }}
+        </a>
+      {{ end }}
+      {{ if and .Draft .Site.Params.article.showDraftLabel }}
+        <span class="ml-2 text-sm text-gray-500 dark:text-gray-400">
+          {{ i18n "article.draft" | emojify }}
+        </span>
+      {{ end }}
+    </h3>
+    <div class="text-sm text-gray-600 dark:text-gray-400 mb-2">
+      {{ partial "article-meta.html" . }}
+    </div>
+    {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+      <div class="text-gray-700 dark:text-gray-300">
+        {{ .Summary | emojify }}
+      </div>
+    {{ end }}
+  </div>
+</article>

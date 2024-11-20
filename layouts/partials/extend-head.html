@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <link rel="stylesheet" href="https://use.typekit.net/aps1owv.css">
 
 {{ $custom := resources.Get "css/custom.css" }}
@@ -5,3 +6,44 @@
   {{ $style := $custom | resources.Minify | resources.Fingerprint "sha512" }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
+=======
+<!-- Custom Fonts -->
+<link rel="stylesheet" href="https://use.typekit.net/aps1owv.css">
+
+<!-- Custom CSS -->
+{{ $custom := resources.Get "css/custom.css" }}
+{{ if $custom }}
+  {{ $customCSS := $custom | resources.Minify | resources.Fingerprint "sha512" }}
+  <link 
+    rel="stylesheet" 
+    href="{{ $customCSS.RelPermalink }}" 
+    integrity="{{ $customCSS.Data.Integrity }}" 
+    crossorigin="anonymous"
+  >
+{{ end }}
+
+<!-- Blist Theme CSS -->
+{{ $css := resources.Get "css/main.css" }}
+{{ $css = $css | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+  {{ $css = $css | minify | fingerprint "sha512" }}
+{{ end }}
+<link 
+  rel="stylesheet" 
+  href="{{ $css.RelPermalink }}" 
+  integrity="{{ $css.Data.Integrity }}" 
+  crossorigin="anonymous"
+>
+
+<!-- Blist Theme JS -->
+{{ $js := resources.Get "js/main.js" }}
+{{ if hugo.IsProduction }}
+  {{ $js = $js | minify | fingerprint "sha512" }}
+{{ end }}
+<script 
+  type="text/javascript" 
+  src="{{ $js.RelPermalink }}" 
+  integrity="{{ $js.Data.Integrity }}" 
+  crossorigin="anonymous"
+></script>
+>>>>>>> f787f0b (new theme , eek)

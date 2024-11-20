@@ -1,6 +1,7 @@
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" | default "" -}}
 {{- $caption := .Get "caption" -}}
+<<<<<<< HEAD
 {{- $class := .Get "class" | default "" -}}
 
 <figure {{ with $class }}class="{{ . }}"{{ end }}>
@@ -9,3 +10,36 @@
     <figcaption>{{ . }}</figcaption>
   {{ end }}
 </figure>
+=======
+{{- $class := .Get "class" | default "w-full h-auto rounded-lg shadow-md" -}}
+{{- $width := .Get "width" | default "1200" -}}
+{{- $height := .Get "height" | default "0" -}}
+
+{{- $image := .Page.Resources.GetMatch $src -}}
+{{- if not $image -}}
+    {{- $image = resources.Get $src -}}
+{{- end -}}
+
+{{- if $image -}}
+    {{- $resizeOptions := printf "%dx%s webp q80" (int $width) $height -}}
+    {{- $resized := $image.Resize $resizeOptions -}}
+
+    <figure class="my-4">
+        <img
+                src="{{ $resized.RelPermalink }}"
+                alt="{{ $alt }}"
+                class="{{ $class }}"
+                width="{{ $resized.Width }}"
+                {{- if ne $height "0" }}
+                    height="{{ $resized.Height }}"
+                {{- end }}
+                loading="lazy"
+        >
+        {{- with $caption -}}
+            <figcaption class="text-center text-sm text-gray-600 mt-2">{{ . | markdownify }}</figcaption>
+        {{- end -}}
+    </figure>
+{{- else -}}
+    <p style="color: red;">Error: Image "{{ $src }}" not found. Please check the image filename and path.</p>
+{{- end -}}
+>>>>>>> f787f0b (new theme , eek)

@@ -9,6 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="599664bf-3f0d-4386-992b-884eb1a400ce" name="Changes" comment="adding a few more stuff.">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -31,6 +32,11 @@
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hugo.toml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/congo" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/themes/blist/layouts/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/blist/layouts/partials/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/blist/layouts/partials/translation_link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/blist/theme.toml" beforeDir="false" />
+>>>>>>> f787f0b (new theme , eek)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,12 +108,21 @@
       </RecentBranches>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/ElectrikSerpentine/electrikserpentine.github.io",
     "accountId": "b8b835fb-bed2-420d-9d04-d50340e240b2"
   }
 }]]></component>
+=======
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/apvarun/blist-hugo-theme.git&quot;,
+    &quot;accountId&quot;: &quot;b8b835fb-bed2-420d-9d04-d50340e240b2&quot;
+  }
+}</component>
+>>>>>>> f787f0b (new theme , eek)
   <component name="HugoPluginSettings">
     <option name="customHugoPath" value="$USER_HOME$/go/bin/hugo" />
     <option name="defaultHugoNewOptions" value="" />
@@ -126,6 +141,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Node.js.postcss.config.js.executor&quot;: &quot;Debug&quot;,
@@ -151,6 +167,33 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.postcss.config.js.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "javascript.nodejs.core.library.configured.version": "20.17.0",
+    "javascript.nodejs.core.library.typings.version": "20.17.6",
+    "last_opened_file_path": "/Users/electrik/Documents/GitHub/electrikserpentine.github.io/layouts",
+    "localPrefix": "",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "/Users/electrik/Documents/GitHub/electrikserpentine.github.io/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+>>>>>>> f787f0b (new theme , eek)
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/layouts" />
@@ -228,7 +271,14 @@
       <workItem from="1731452221545" duration="22468000" />
       <workItem from="1731601656106" duration="7052000" />
       <workItem from="1731658942576" duration="7039000" />
+<<<<<<< HEAD
       <workItem from="1731784704953" duration="4626000" />
+=======
+      <workItem from="1731784704953" duration="7424000" />
+      <workItem from="1731967755202" duration="12106000" />
+      <workItem from="1732102766990" duration="2316000" />
+      <workItem from="1732108730776" duration="9598000" />
+>>>>>>> f787f0b (new theme , eek)
     </task>
     <task id="LOCAL-00001" summary="adding a few more stuff.">
       <option name="closed" value="true" />

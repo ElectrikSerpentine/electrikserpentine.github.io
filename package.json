@@ -1,0 +1,21 @@
+{
+  "name": "electrikserpentine-github-io",
+  "version": "1.0.0",
+  "description": "meow",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/styles.css",
+    "build": "NODE_ENV=production hugo --gc --minify",
+    "dev": "hugo server"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.14",
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "tailwindcss": "^3.4.15"
+  }
+}

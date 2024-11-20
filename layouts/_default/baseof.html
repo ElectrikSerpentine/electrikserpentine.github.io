@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}" itemscope itemtype="http://schema.org/WebPage">
+<head>
+    {{- partial "head.html" . -}}
+    <style>
+        @font-face {
+            font-family: 'Yellowtail Regular';
+            src: url("abd5184b920ba32380b759948b62d754.eot");
+            src: url("abd5184b920ba32380b759948b62d754.eot?#iefix")format("embedded-opentype"),
+                url("abd5184b920ba32380b759948b62d754.woff")format("woff"),
+                url("abd5184b920ba32380b759948b62d754.woff2")format("woff2"),
+                url("abd5184b920ba32380b759948b62d754.ttf")format("truetype"),
+                url("abd5184b920ba32380b759948b62d754.svg#Yellowtail Regular")format("svg");
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .site-header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        .site-footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        .main-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        
+        .mobile-menu-button {
+            display: none;
+            }
+        @media (max-width: 768px) {
+            .mobile-menu-button {
+                display: block;
+            }
+        }
+        #dark-mode-toggle {
+            cursor: pointer;
+        }
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            cursor: pointer;
+        }
+        .scroll-to-top.visible {
+            display: block;
+        }
+    </style>
+</head>
+<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen">
+    <header class="site-header">
+        <div class="container">
+            {{- partial "header.html" . -}}
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="main-content flex-1">
+            {{- block "main" . }}{{- end }}
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            {{- partial "footer.html" . -}}
+        </div>
+    </footer>
+
+    {{- partial "scripts.html" . -}}
+    <script>
+        // Show/hide scroll-to-top button
+        window.addEventListener('scroll', function() {
+            var scrollToTop = document.querySelector('.scroll-to-top');
+            if (window.pageYOffset > 100) {
+                scrollToTop.classList.add('visible');
+            } else {
+                scrollToTop.classList.remove('visible');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -3,7 +3,11 @@ title: "The Serpent"
 description: "Electrik⚡️Youth" 
 date: 2024-10-16T10:55:53-07:00
 tags: ["About"] 
+<<<<<<< HEAD
 layout: "simple"
+=======
+layout: "single"
+>>>>>>> f787f0b (new theme , eek)
 draft: false
 showComments: false
 ---
@@ -11,7 +15,11 @@ showComments: false
 <br>
 <center> Hey,High, Hi. </center></br>
 <br>
+<<<<<<< HEAD
 	{{< figure src="intro.jpg" alt="Mila" >}}
+=======
+	{{< image src="/images/intro.jpg" alt="Mila" >}}
+>>>>>>> f787f0b (new theme , eek)
 </br>
 
 <br>

@@ -1,7 +1,11 @@
 ---
 title: "Instagram"
 date: 2024-10-19T23:24:27-07:00
+<<<<<<< HEAD
 layout: "simple"
+=======
+layout: "single"
+>>>>>>> f787f0b (new theme , eek)
 ---
 
 <div class="instagram-wrapper">
