@@ -1,34 +1,5 @@
 {{ $src := .Get "src" }}
 {{ $alt := .Get "alt" }}
-<<<<<<< HEAD
-
-{{ $image := "" }}
-{{ if hasPrefix $src "/" }}
-  {{ $image = resources.Get (strings.TrimPrefix "/" $src) }}
-{{ else }}
-  {{ $image = .Page.Resources.GetMatch $src }}
-{{ end }}
-
-{{ if not $image }}
-  <p style="color: red;">Error: Image not found. Please check the image filename and path.</p>
-{{ else }}
-  {{ $small := $image.Resize "600x" }}
-  {{ $medium := $image.Resize "1200x" }}
-  {{ $large := $image.Resize "1800x" }}
-
-  <img 
-    srcset="{{ $small.RelPermalink }} 600w,
-            {{ $medium.RelPermalink }} 1200w,
-            {{ $large.RelPermalink }} 1800w"
-    sizes="(max-width: 600px) 600px,
-           (max-width: 1200px) 1200px,
-           1800px"
-    src="{{ $image.RelPermalink }}"
-    alt="{{ $alt }}"
-    class="responsive-image w-full h-auto object-cover rounded-lg shadow-md"
-    style="background: transparent;"
-  >
-=======
 {{ $caption := .Get "caption" }}
 {{ $class := .Get "class" | default "responsive-image w-full h-auto object-cover rounded-lg shadow-md" }}
 
@@ -48,20 +19,19 @@
 
     <figure class="my-4">
         <img
-                srcset="{{ $small.RelPermalink }} 600w,
-              {{ $medium.RelPermalink }} 1200w,
-              {{ $large.RelPermalink }} 1800w"
-                sizes="(max-width: 600px) 600px,
-             (max-width: 1200px) 1200px,
-             1800px"
-                src="{{ $image.RelPermalink }}"
-                alt="{{ $alt }}"
-                class="{{ $class }}"
-                loading="lazy"
+            srcset="{{ $small.RelPermalink }} 600w,
+                    {{ $medium.RelPermalink }} 1200w,
+                    {{ $large.RelPermalink }} 1800w"
+            sizes="(max-width: 600px) 600px,
+                   (max-width: 1200px) 1200px,
+                   1800px"
+            src="{{ $image.RelPermalink }}"
+            alt="{{ $alt }}"
+            class="{{ $class }}"
+            loading="lazy"
         >
         {{ with $caption }}
             <figcaption class="text-center text-sm text-gray-600 mt-2">{{ . | markdownify }}</figcaption>
         {{ end }}
     </figure>
->>>>>>> f787f0b (new theme , eek)
 {{ end }}
