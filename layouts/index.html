@@ -6,15 +6,6 @@
       </h1>
       <p class="text-2xl font-light text-yellow-300 italic font-satisfy">
         Shahmaran
-<<<<<<< HEAD
-      </h2>
-    </header>
-
-        A Collection of My Thoughts & Musings
-      </p>
-    </section>
-
-=======
       </p>
       <p class="mt-4 text-xl text-gray-200">
         A Collection of My Thoughts & Musings
@@ -22,29 +13,11 @@
     </header>
 
     {{ $frontBundle := .Site.Params.frontBundle | default "blog" }}
->>>>>>> f787f0b (new theme , eek)
     {{ if .Site.Params.homepage.showRecent }}
       <section class="mt-10">
         <h2 class="text-2xl font-bold text-green-300">
           Recent Posts
         </h2>
-<<<<<<< HEAD
-        <ul class="mt-4 space-y-4">
-          {{ range first .Site.Params.homepage.recentLimit (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-            <li>
-              <a href="{{ .Permalink }}" class="text-lg font-medium text-pink-300 hover:text-pink-200">
-                {{ .Title }}
-              </a>
-              <span class="block text-sm text-gray-400">
-                {{ .Date.Format "January 2, 2006" }}
-              </span>
-            </li>
-          {{ end }}
-        </ul>
-      </section>
-    {{ end }}
-
-=======
         <div class="container p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
           {{ range first .Site.Params.homepage.recentLimit (where .Site.RegularPages.ByDate.Reverse "Type" $frontBundle) }}
             {{- partial "blog-card.html" . -}}
@@ -54,16 +27,15 @@
     {{ end }}
 
     {{ if gt (len (where .Site.RegularPages.ByDate.Reverse "Type" $frontBundle)) .Site.Params.homepage.recentLimit }}
-    <div class="text-center mb-8">
-      <a class="px-8 py-3 rounded transition-colors {{ .Site.Params.ascentColor | default "bg-pink-50" }}
-        text-gray-500 hover:text-gray-800 dark:bg-gray-900 dark:text-gray-400 dark:hover:text-white"
-        href="{{ (index (.Site.Menus.main) 0).URL | absLangURL }}" lang="{{ .Lang }}">
-        {{ i18n "morePosts" }}
-      </a>
-    </div>
+      <div class="text-center mb-8">
+        <a class="px-8 py-3 rounded transition-colors {{ .Site.Params.ascentColor | default "bg-pink-50" }}
+          text-gray-500 hover:text-gray-800 dark:bg-gray-900 dark:text-gray-400 dark:hover:text-white"
+          href="{{ (index (.Site.Menus.main) 0).URL | absLangURL }}" lang="{{ .Lang }}">
+          {{ i18n "morePosts" }}
+        </a>
+      </div>
     {{ end }}
 
->>>>>>> f787f0b (new theme , eek)
     <section class="mt-10">
       <h2 class="text-2xl font-bold text-purple-300">
         Featured Content
@@ -74,9 +46,6 @@
       </p>
     </section>
   </article>
-<<<<<<< HEAD
-=======
 
   {{- partial "social.html" . -}}
->>>>>>> f787f0b (new theme , eek)
 {{ end }}

@@ -4,11 +4,7 @@ date: 2024-10-08T02:41:17-07:00
 tags: ["welcome", "first blog post", "bangbang"]
 slug: "Fuck-My-Balls"
 showComments: false
-<<<<<<< HEAD
 layout: "simple"
-=======
-layout: "single"
->>>>>>> f787f0b (new theme , eek)
 ---
 
 Well - this is literally just the beginning of this blog.

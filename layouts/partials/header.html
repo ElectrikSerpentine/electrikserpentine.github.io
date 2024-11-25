@@ -1,24 +1,21 @@
-<<<<<<< HEAD
-<header>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-J9839Z36YT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-J9839Z36YT');
-</script>
-{{ template "_internal/google_analytics.html" . }}
-{{ template "_interal/google_analytics_async.html" . }}
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-J9839Z36YT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-J9839Z36YT');
+  </script>
+  <!-- Other head elements should go here -->
 </head>
-=======
+
 <header class="container flex justify-between md:justify-between gap-4 flex-wrap p-6 mx-auto relative">
   <a href="{{ .Site.Home.Permalink }}" class="capitalize font-extrabold text-2xl flex items-center">
     {{ if .Site.Params.logo }}
-  <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" style="height: 11rem; width: auto;" />
+      <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}" style="height: 11rem; width: auto;" />
     {{ else }}
-    {{ .Site.Title }}
+      {{ .Site.Title }}
     {{ end }}
   </a>
   <button id="dark-mode-toggle" class="btn btn-ghost btn-square">
@@ -39,4 +36,3 @@
     {{ end }}
   </ul>
 </header>
->>>>>>> f787f0b (new theme , eek)
