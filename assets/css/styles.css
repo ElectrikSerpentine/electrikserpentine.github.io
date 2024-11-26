@@ -1,13 +1,18 @@
 /* Tailwind base - put variables under: tailwind.config.js */
 @import "tailwindcss/base";
-/* Tailwind component classes registered by plugins*/
+
+/* Tailwind component classes registered by plugins */
 @import "tailwindcss/components";
+
 /* Site Specific */
 @import "site";
+
 /* Paginator */
 @import "paginator";
+
 /* Tailwind's utility classes - generated based on config file */
 @import "tailwindcss/utilities";
+
 /* daisyui */
 @import "daisyui";
 
@@ -40,13 +45,16 @@
     margin-top: 0.125rem /* 2px */ !important;
     margin-bottom: 0.125rem /* 2px */ !important;
   }
+
   details.toc ul li {
     margin-top: 0.125rem /* 2px */ !important;
     margin-bottom: 0.125rem /* 2px */ !important;
   }
+
   details.toc ul li:before {
     @apply rounded-none bg-gray-400;
   }
+
   details.toc ul li a {
     @apply no-underline text-gray-700 dark:text-gray-200 text-base;
   }

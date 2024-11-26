@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import custom fonts */
+@import 'custom-fonts.css';
+@import "flying-debris-font.css";
+@import "nelo-font.css";
+@import "summer-days-font.css";
+@import "trinstam-font.css";

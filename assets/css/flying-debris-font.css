@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Flying-Debris, regular, sans-serif;
+  src: url('/fonts/Flying-Debris.woff2') 
+    format('woff2');
+  font-weight: normal;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  ;
+}
+
+body {
+  font-family: Flying-Debris, regular, sans-serif; 
+}
+
+.font-flying-debris-title {
+  font-family: Flying-Debris, regular, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  line-height: 3rem;
+  }

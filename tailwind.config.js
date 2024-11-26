@@ -2,8 +2,8 @@ module.exports = {
   purge: {
     enabled: process.env.HUGO_ENVIRONMENT === "production",
     content: [
-      "./layouts/**/*.html"
-      "./content/**/*.{html.md}"
+      "./layouts/**/*.html",
+      "./content/**/*.{html,md}",
       "./hugo.toml",
       "./assets/js/search.js",
       "./themes/blist/layouts/**/*.html",
@@ -34,10 +34,10 @@ module.exports = {
                 color: theme("colors.gray.300"),
               },
               a: {
-                color: theme("colors.stone"),
+                color: theme("colors.stone.500"),
               },
               strong: {
-                color: theme("colors.zinc"),
+                color: theme("colors.zinc.500"),
               },
               "ol > li::before": {
                 color: theme("colors.gray.400"),
@@ -53,25 +53,25 @@ module.exports = {
                 borderLeftColor: theme("colors.gray.600"),
               },
               h1: {
-                color: theme("colors.zinc"),
+                color: theme("colors.zinc.500"),
               },
               h2: {
-                color: theme("colors.stone"),
+                color: theme("colors.stone.500"),
               },
               h3: {
-                color: theme("colors.zinc"),
+                color: theme("colors.zinc.500"),
               },
               h4: {
-                color: theme("colors.stone"),
+                color: theme("colors.stone.500"),
               },
               "figure figcaption": {
                 color: theme("colors.gray.400"),
               },
               code: {
-                color: theme("colors.zinc"),
+                color: theme("colors.zinc.500"),
               },
               "a code": {
-                color: theme("colors.amber"),
+                color: theme("colors.amber.500"),
               },
               'code::before': {
                 content: '""',
@@ -104,7 +104,7 @@ module.exports = {
   plugins: [
     require("@tailwindcss/typography"),
     require('daisyui')
-    ],
+  ],
   daisyui: {
     themes: ['dark', 'cyberpunk', 'synthwave'],
   },

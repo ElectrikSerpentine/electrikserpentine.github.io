@@ -1,0 +1,54 @@
+/* CUSTOM Fonts */
+
+/* Summer Days */
+@font-face {
+  font-family: 'Summer Days';
+  src: url('/fonts/Summer Days.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Trinstam */
+@font-face {
+  font-family: 'Trinstam';
+  src: url('/fonts/Trinstam.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Nelo */
+@font-face {
+  font-family: 'Nelo';
+  src: url('/fonts/Nelo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Flying Debris */
+@font-face {
+  font-family: 'Flying Debris';
+  src: url('/fonts/Flying-Debris.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom font classes */
+.summer-days-title {
+  font-family: 'Summer Days', sans-serif;
+}
+
+.font-trinstam {
+  font-family: 'Trinstam', sans-serif;
+}
+
+.font-nelo {
+  font-family: 'Nelo', sans-serif;
+}
+
+.font-flying-debris {
+  font-family: 'Flying Debris', cursive;
+}

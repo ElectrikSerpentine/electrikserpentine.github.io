@@ -7,9 +7,9 @@ User-agent: *
 Allow: /
 
 # Protect private or in-progress content
-Disallow: /drafts/
+#Disallow: /drafts/
 Disallow: /private/
-Disallow: /admin/
+#Disallow: /admin/
 
 # Prevent crawling of search results
 Disallow: /search

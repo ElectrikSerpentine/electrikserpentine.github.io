@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Trinstam;
+  src: url('/fonts/Trinstam.woff2') 
+    format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: 75% 125%
+}
+
+body {
+  font-family: Trinstam, sans-serif;
+}
+
+.font-trinstam-title {
+  font-family: Trinstam, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  line-height: 3rem;
+}
