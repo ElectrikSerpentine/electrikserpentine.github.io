@@ -6,7 +6,7 @@
     <p class="text-xl text-neutral-600 dark:text-neutral-400">Oops! It seems you've wandered into uncharted territory.</p>
     
     <div class="my-8">
-      {{ $image := resources.Get "images/lost-serpent.png" }}
+      {{ $image := resources.Get "/images/lost-serpent.png" }}
       {{ if $image }}
         {{ $image := $image.Resize "400x" }}
         <img src="{{ $image.RelPermalink }}" alt="Lost Serpent" class="mx-auto w-64 h-auto filter dark:invert">

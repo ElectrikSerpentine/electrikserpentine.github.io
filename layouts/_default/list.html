@@ -1,21 +1,6 @@
 {{ define "main" }}
   {{ $toc := and (.Params.showTableOfContents | default (.Site.Params.list.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
-<<<<<<< HEAD
-  <header class="text-center">
-    {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default true) }}
-      {{ partial "breadcrumbs.html" . }}
-    {{ end }}
-    <h1 class="mt-0 font-extrabold text-nuetral-900 dark:text-nuetral font-nelo big-title leading-tight">{{ .Title }}</h1>
-  </header>
-  <section
-    class="{{ if $toc -}}
-      mt-12
-    {{- else -}}
-      mt-0
-    {{- end }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
-  >
-=======
-  
+
   <header class="container px-6 pt-6 mx-auto text-center">
     {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default true) }}
       {{ partial "breadcrumbs.html" . }}
@@ -24,7 +9,6 @@
   </header>
 
   <section class="{{ if $toc -}}mt-12{{- else -}}mt-0{{- end }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row container mx-auto px-6">
->>>>>>> f787f0b (new theme , eek)
     {{ if $toc }}
       <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
         <div class="toc ps-5 lg:sticky lg:top-10">
@@ -36,30 +20,14 @@
       {{ .Content | emojify }}
     </div>
   </section>
-<<<<<<< HEAD
-  {{ if .Data.Pages }}
-    <section class="mx-auto max-w-prose">
-=======
 
   {{ if .Data.Pages }}
     <section class="container p-6 mx-auto">
->>>>>>> f787f0b (new theme , eek)
       {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
         {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
           <h2 class="mt-12 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300 text-center font-nelo">
             {{ .Key }}
           </h2>
-<<<<<<< HEAD
-          <hr class="w-36 border-dotted border-neutral-400 mx-auto" />
-          {{ range .Pages }}
-            {{ partial "article-link.html" . }}
-          {{ end }}
-        {{ end }}
-      {{ else }}
-        {{ range (.Paginate .Pages).Pages }}
-          {{ partial "article-link.html" . }}
-        {{ end }}
-=======
           <hr class="w-36 border-dotted border-neutral-400 mx-auto mb-6" />
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
             {{ range .Pages }}
@@ -73,7 +41,6 @@
             {{- partial "blog-card.html" . -}}
           {{ end }}
         </div>
->>>>>>> f787f0b (new theme , eek)
       {{ end }}
     </section>
     {{ partial "pagination.html" . }}
@@ -84,9 +51,6 @@
       </p>
     </section>
   {{ end }}
-<<<<<<< HEAD
-=======
 
   {{- partial "social.html" . -}}
->>>>>>> f787f0b (new theme , eek)
 {{ end }}

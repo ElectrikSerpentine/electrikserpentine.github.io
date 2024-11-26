@@ -1,91 +1,91 @@
 {{ define "main" }}
-  {{ $lastmodstr := (partial "date.html" (dict "date" .Lastmod "language" $.Page.Language "format" "long")) }}
-  {{ $datestr := (partial "date.html" (dict "date" .Date "language" $.Page.Language "format" "long")) }}
+<style>
+  @font-face {
+    font-family: 'Yellowtail Regular';
+    src: url("abd5184b920ba32380b759948b62d754.eot");
+    src: url("abd5184b920ba32380b759948b62d754.eot?#iefix")format("embedded-opentype"),
+         url("abd5184b920ba32380b759948b62d754.woff")format("woff"),
+         url("abd5184b920ba32380b759948b62d754.woff2")format("woff2"),
+         url("abd5184b920ba32380b759948b62d754.ttf")format("truetype"),
+         url("abd5184b920ba32380b759948b62d754.svg#Yellowtail Regular")format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  .custom-heading {
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  .custom-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .custom-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .custom-link:hover {
+    background-color: #0056b3;
+  }
+</style>
 
-  <style>
-    @font-face {
-      font-family: 'Yellowtail Regular';
-      src: url("abd5184b920ba32380b759948b62d754.eot");
-      src: url("abd5184b920ba32380b759948b62d754.eot?#iefix")format("embedded-opentype"),
-           url("abd5184b920ba32380b759948b62d754.woff")format("woff"),
-           url("abd5184b920ba32380b759948b62d754.woff2")format("woff2"),
-           url("abd5184b920ba32380b759948b62d754.ttf")format("truetype"),
-           url("abd5184b920ba32380b759948b62d754.svg#Yellowtail Regular")format("svg");
-      font-weight: normal;
-      font-style: normal;
-      font-display: swap;
-    }
-    .custom-heading {
-      font-family: 'Yellowtail', cursive;
-      text-align: center;
-      font-size: 3rem;
-      color: #333;
-      margin-bottom: 1rem;
-    }
-    .custom-box {
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .custom-link {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-    .custom-link:hover {
-      background-color: #0056b3;
-    }
-  </style>
-
-  <article>
-    <header class="max-w-prose">
-      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
-        {{ partial "breadcrumbs.html" . }}
-      {{ end }}
-      <h1 class="custom-heading">
-        {{ .Title | emojify }}
-      </h1>
-      {{ if or
-        (.Params.showDate | default (.Site.Params.article.showDate | default true))
-        (and (.Params.showDateUpdated | default (.Site.Params.article.showDateUpdated | default false)) (ne $datestr $lastmodstr))
-        (and (.Params.showWordCount | default (.Site.Params.article.showWordCount | default false)) (ne .WordCount 0))
-        (and (.Params.showReadingTime | default (.Site.Params.article.showReadingTime | default true)) (ne .ReadingTime 0))
-        (.Params.showEdit | default (.Site.Params.article.showEdit | default false))
-      }}
-        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
-          {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
-        </div>
-      {{ end }}
-    </header>
-    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
-      {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default true)) (in .TableOfContents "<ul") }}
-        <div class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
-          <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
-            <h2 class="text-lg font-semibold">{{ i18n "table_of_contents" }}</h2>
-            {{ .TableOfContents }}
-          </div>
-        </div>
-      {{ end }}
-      <div class="min-w-0 min-h-0 max-w-prose">
-        {{ .Content | emojify }}
+<article>
+  <header class="max-w-prose">
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
+      {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="custom-heading">
+      {{ .Title | emojify }}
+    </h1>
+    {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+    {{ $dateStr := .Date.Format $dateFormat }}
+    {{ $lastmodStr := .Lastmod.Format $dateFormat }}
+    {{ if or
+      (.Params.showDate | default (.Site.Params.article.showDate | default true))
+      (and (.Params.showDateUpdated | default (.Site.Params.article.showDateUpdated | default false)) (ne $dateStr $lastmodStr))
+      (and (.Params.showWordCount | default (.Site.Params.article.showWordCount | default false)) (ne .WordCount 0))
+      (and (.Params.showReadingTime | default (.Site.Params.article.showReadingTime | default true)) (ne .ReadingTime 0))
+      (.Params.showEdit | default (.Site.Params.article.showEdit | default false))
+    }}
+      <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
       </div>
-    </section>
-    <footer class="pt-8">
-      {{ partial "article-pagination.html" . }}
-      {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
-        {{ if templates.Exists "partials/comments.html" }}
-          <div class="pb-6 pt-6">
-            {{ partial "comments.html" . }}
-          </div>
-        {{ else }}
-          {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
-        {{ end }}
+    {{ end }}
+  </header>
+  <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+    {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default true)) (in .TableOfContents "<ul") }}
+      <div class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+        <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
+          <h2 class="text-lg font-semibold">{{ i18n "table_of_contents" }}</h2>
+          {{ .TableOfContents }}
+        </div>
+      </div>
+    {{ end }}
+    <div class="min-w-0 min-h-0 max-w-prose">
+      {{ .Content | emojify }}
+    </div>
+  </section>
+  <footer class="pt-8">
+    {{ partial "article-pagination.html" . }}
+    {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
+      {{ if templates.Exists "partials/comments.html" }}
+        <div class="pb-6 pt-6">
+          {{ partial "comments.html" . }}
+        </div>
+      {{ else }}
+        {{ warnf "[BLOWFISH] Comments are enabled for %s but no comments partial exists." .File.Path }}
       {{ end }}
-    </footer>
-  </article>
+    {{ end }}
+  </footer>
+</article>
 {{ end }}

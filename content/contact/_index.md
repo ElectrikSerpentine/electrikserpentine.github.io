@@ -13,10 +13,10 @@ cascade:
   invertPagination: true
 ---
 <center>Where y'all can / may
-<br>feel <bold>free</bold> to 
-<br>*contact/
-<br>*reach/
-<br>*follow me at
-</br></br></br></br>
+feel <bold>free</bold> to 
+*contact/
+*reach/
+*follow me at
+
 meow:3</center>
 

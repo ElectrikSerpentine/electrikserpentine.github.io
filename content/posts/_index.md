@@ -7,16 +7,9 @@ layout: "list"
 draft: false
 ---
 
-
 <center>
     {{< image src="/images/welcome-banner.png" alt="welcome-banner" width="1200" >}}
 </center>
 
-
-<br>
  - Welcome to the blog part of my website.
-  </br>
-<br>
  - Where you can find all of my post! 
-</br>
-
