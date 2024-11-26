@@ -1,27 +1,29 @@
 {{ define "main" }}
 <style>
   @font-face {
-    font-family: 'Yellowtail Regular';
-    src: url("abd5184b920ba32380b759948b62d754.eot");
-    src: url("abd5184b920ba32380b759948b62d754.eot?#iefix")format("embedded-opentype"),
-         url("abd5184b920ba32380b759948b62d754.woff")format("woff"),
-         url("abd5184b920ba32380b759948b62d754.woff2")format("woff2"),
-         url("abd5184b920ba32380b759948b62d754.ttf")format("truetype"),
-         url("abd5184b920ba32380b759948b62d754.svg#Yellowtail Regular")format("svg");
-    font-weight: normal;
+    font-family: 'VANILA';
+    src: url('/fonts/VANILA.ttf');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
+  body {
+    font-family: 'VANILA', sans-serif;
+    font-weight: 400;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+  }
   .custom-heading {
-    font-family: 'Yellowtail', cursive;
+    font-family: 'VANILA', sans-serif;
     text-align: center;
     font-size: 3rem;
-    color: #333;
+    color: #f0f0f0;
     margin-bottom: 1rem;
+    font-weight: 400;
   }
   .custom-box {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #2a2a2a;
+    border: 1px solid #444;
     padding: 20px;
     margin-bottom: 20px;
   }
@@ -37,10 +39,19 @@
   .custom-link:hover {
     background-color: #0056b3;
   }
+  .prose {
+    max-width: 65ch;
+    color: #f0f0f0;
+  }
+  .toc {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    padding: 15px;
+  }
 </style>
 
-<article>
-  <header class="max-w-prose">
+<article class="max-w-full px-6 mx-auto">
+  <header class="max-w-prose mx-auto">
     {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default false) }}
       {{ partial "breadcrumbs.html" . }}
     {{ end }}
@@ -57,12 +68,13 @@
       (and (.Params.showReadingTime | default (.Site.Params.article.showReadingTime | default true)) (ne .ReadingTime 0))
       (.Params.showEdit | default (.Site.Params.article.showEdit | default false))
     }}
-      <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      <div class="mb-10 text-base text-neutral-400 dark:text-neutral-300 print:hidden">
         {{ partial "article-meta.html" (dict "context" . "scope" "single") }}
       </div>
     {{ end }}
   </header>
-  <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+
+  <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row mx-auto">
     {{ if and (.Params.showTableOfContents | default (.Site.Params.article.showTableOfContents | default true)) (in .TableOfContents "<ul") }}
       <div class="order-first px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
         <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-10">
@@ -71,11 +83,12 @@
         </div>
       </div>
     {{ end }}
-    <div class="min-w-0 min-h-0 max-w-prose">
+    <div class="min-w-0 min-h-0 max-w-prose mx-auto">
       {{ .Content | emojify }}
     </div>
   </section>
-  <footer class="pt-8">
+
+  <footer class="pt-8 max-w-prose mx-auto">
     {{ partial "article-pagination.html" . }}
     {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
       {{ if templates.Exists "partials/comments.html" }}

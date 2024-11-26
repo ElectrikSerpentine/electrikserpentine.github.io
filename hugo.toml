@@ -4,11 +4,15 @@ title = 'Electrik⚡️Serpentine'
 theme = "blist"
 
 [params]
-  introTitle = "Meow"
-  introSubtitle = "BRB"
+  introSubtitle = "The Serpent's Lair of Knowledge & Musings"
   introPhoto = "/images/intro.jpg"
   logo = "/images/es-logo.png"
   introDarkTheme = true
+
+# Custom fonts
+customFonts = true
+customFontCSS = "/css/custom-fonts.css"
+uglyURLs = true 
 
 [[menu.main]]
   name = "Home"
@@ -48,16 +52,14 @@ theme = "blist"
   posts = "/posts/:slug"
 
 enableRobotsTXT =true
-enableEomji = true
+enableEmoji = true
 darkModeToggle = true
 enableSearch = true
 
-[pagination]
+[params.pagination]
   pagerSize = 15
 
 # Customize search parameters for a page
-# Options listed below; Including full content may slow search results
-# Page title is always included
 searchKeys = [
   "tags",
   "date",
@@ -78,7 +80,7 @@ favicon = "/favicon.ico"
 # Color for intro details and social links (not for dark mode)
 # Use any TailwindCSS default color
 # See: https://tailwindcss.com/docs/customizing-colors
-ascentColor = "bg-rose-900"
+ascentColor = "bg-emerald-500"
 
 # The page bundle that is shown on the front page
 frontBundle = "blog"
@@ -136,6 +138,14 @@ description = "🐇"
 [build]
   writeStats = true
 
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   section = ["HTML", "RSS"]
@@ -147,13 +157,18 @@ description = "🐇"
 [markup]
   [markup.highlight]
     style = "dracula"
+
 [markup.goldmark.parser]
   wrapStandAloneImageWithinParagraph = false
+
 [markup.goldmark.parser.attribute]
   block = true
+
 [markup.goldmark.renderer]
   unsafe = true
+
 [markup.goldmark.renderHooks.image]
   enableDefault = true
 
-ignoreLogs = ['warning-goldmark-raw-html']
+[markup.goldmark.raw.html]
+  ignoreLogs = true  

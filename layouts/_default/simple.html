@@ -1,26 +1,31 @@
 {{ define "main" }}
   <style>
-    @import url("https://db.onlinewebfonts.com/c/1937982c863280980aab37c09b5cd917?family=Oi%21");    
-    .title-oi {
-      font-family: 'Oi', cursive;
+      @font-face {
+    font-family: 'VANILA';
+    src: url('/fonts/VANILA.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+    body {
+      font-family: 'Vanila';
       font-weight: 400;
-      font-style: normal;
     }
   </style>
 
-  <article class="max-w-full">
-    <header>
+  <article class="max-w-full px-6 mx-auto">
+    <header class="container mx-auto text-center">
       {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default true) }}
         {{ partial "breadcrumbs.html" . }}
       {{ end }}
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral title-oi">
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-400 dark:text-neutral leading-tight">
         {{ .Title | emojify }}
       </h1>
     </header>
-    <section class="prose mt-6 max-w-full dark:prose-invert">
+    <section class="prose mt-6 max-w-prose mx-auto dark:prose-invert">
       {{ .Content | emojify }}
     </section>
-    <footer class="pt-8">
+    <footer class="pt-8 max-w-prose mx-auto">
       {{ partial "sharing-links.html" . }}
     </footer>
   </article>

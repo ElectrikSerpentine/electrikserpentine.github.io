@@ -10,9 +10,12 @@
     "dev": "hugo server"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
     "@tailwindcss/typography": "^0.5.15",
+    "aspect-ratio@latest": "link: @tailwindcss/aspect-ratio@latest",
     "autoprefixer": "^10.4.20",
     "daisyui": "^4.12.14",
+    "line-clamp@latest": "link: @tailwindcss/line-clamp@latest",
     "postcss": "^8.4.49",
     "postcss-cli": "^11.0.0",
     "postcss-import": "^16.1.0",

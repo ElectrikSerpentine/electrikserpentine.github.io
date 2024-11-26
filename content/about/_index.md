@@ -9,18 +9,18 @@ showComments: false
 ---
 
 <br>
-<center> Hey,High, Hi. </center></br>
-<br>
+ Hey,High, Hi. 
+
 	{{< image src="/images/intro.jpg" alt="Mila" >}}
-</br>
+
 
 <br>
-<center>- the names Mila🖤 </center></br>
-<center>- Feline✌🏼😽 </center>
-<center>- 30 years old </center>
-<center>- && living inside my head majority of the time. </center>
-<center>- ♋︎ </center>
-<center>- Currently developing this site just as a mean to improve && show off my skills.</center>
+- the names Mila🖤 
+- Feline✌🏼😽 
+- 30 years old 
+- && living inside my head majority of the time. 
+- ♋︎ 
+- Currently developing this site just as a mean to improve && show off my skills.
 
 <br>
-<center> {{< audio "NinaCobhamSola.mp3" >}} </center></br>
+ {{< audio "NinaCobhamSola.mp3" >}} 

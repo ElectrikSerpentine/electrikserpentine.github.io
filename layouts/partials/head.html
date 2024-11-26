@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="{{ if (isset .Site.Params "favicon") }}{{ .Site.Params.favicon }}{{ else }}/favicon.ico{{ end }}">
   <title>
-  {{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}
+    {{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}
   </title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}" />
   {{- if .Keywords }}
@@ -12,20 +12,28 @@
   {{- if .Params.Author }}
   <meta name="author" content="{{ .Params.Author}}" />
   {{ end -}}
-
   {{ hugo.Generator }}
 
-  {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/") -}}
-  {{- if hugo.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  <!-- Styles -->
+  {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "postcss.config.js") -}}
+  {{- if hugo.IsProduction }}
+    {{- $styles := $styles | minify | fingerprint | resources.PostProcess -}}
+    <link
+      rel="stylesheet"
+      href="{{ $styles.Permalink }}"
+      integrity="{{ $styles.Data.Integrity }}"
+      crossorigin="anonymous"
+    />
   {{ else }}
-  {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
-  <link
-    rel="stylesheet"
-    href="{{ $styles.Permalink }}"
-    integrity="{{ $styles.Data.Integrity }}"
-  />
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
   {{ end -}}
+
+  <!-- Custom fonts -->
+  <link rel="stylesheet" href="{{ "css/custom-fonts.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "css/wassail-font.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "css/vanila-font.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "css/occult-overture-font.css" | relURL }}" />
+  <link rel="stylesheet" href="{{ "css/chillight-font.css" | relURL }}" />
 
   <!-- KaTeX support -->
   {{ if .Params.math }}
@@ -52,10 +60,9 @@
   {{ template "_internal/twitter_cards.html" . }}
   {{ template "_internal/schema.html" . }}
 
- <!-- Add this line to include the main.js file -->
+  <!-- Main script -->
   {{ $main := resources.Get "js/main.js" | minify | fingerprint }}
   <script src="{{ $main.Permalink }}" integrity="{{ $main.Data.Integrity }}" defer></script>
-
 
   <!-- Dark mode script -->
   <script>

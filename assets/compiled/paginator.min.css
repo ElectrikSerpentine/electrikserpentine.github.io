@@ -1,0 +1,1 @@
+@media (prefers-color-scheme:dark){.pagination{@apply bg-gray-800;}.page-item{@apply text-gray-300;}.page-item:hover{@apply bg-gray-700;}}

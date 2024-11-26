@@ -1,54 +1,89 @@
 /* CUSTOM Fonts */
 
-/* Summer Days */
+/* VANILA */
 @font-face {
-  font-family: 'Summer Days';
-  src: url('/fonts/Summer Days.woff2') format('woff2');
+  font-family: 'VANILA';
+  src: url('/fonts/VANILA.woff2')format('woff2');
+  src: local("");
+  src: url("/fonts/VANILA.eot?#iefix")format("embedded-opentype"),
+       url("/fonts/VANILA.woff")format("woff"),
+       url("/fonts/VANILA.woff2")format("woff2"),
+       url("/fonts/VANILA.ttf")format("truetype"),
+       url("/fonts/VANILA.svg#VANILA")format("svg");
+  font-weight: normal;
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-/* Trinstam */
+/* Occult Overture */
 @font-face {
-  font-family: 'Trinstam';
-  src: url('/fonts/Trinstam.woff2') format('woff2');
-  font-weight: normal;
+  font-family: "Occult Overture";
   font-style: normal;
-  font-display: swap;
-}
-
-/* Nelo */
-@font-face {
-  font-family: 'Nelo';
-  src: url('/fonts/Nelo.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* Flying Debris */
-@font-face {
-  font-family: 'Flying Debris';
-  src: url('/fonts/Flying-Debris.woff2') format('woff2');
   font-weight: 400;
-  font-style: normal;
+  src: url("/fonts/Occult Overture.tff"); 
+  src: local(""),
+    url("/fonts/Occult Overture.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/Occult Overture.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/Occult Overture.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/Occult Overture.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("/fonts/Occult Overture.svg#400")
+      format("svg"); /* Legacy iOS */;
   font-display: swap;
 }
+
+/* Wassail */
+@font-face {
+  font-family: 'Wassail', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/Wassail-2O90d.otf');
+  src: local(""),
+       url("/fonts/Wassail.etf?#iefix") format("embedded-opentype"),
+       /* IE6-IE8 */ 
+       url("/fonts/Wassail.woff2") format("woff2"),
+       /* Super Modern Browsers */ 
+       url("/fonts/Wassail.woff")format("woff"), 
+       /* Modern Browsers */ 
+       url("/fonts/Wassail.ttf")format("truetype"),
+       /* Safari, Android, iOS */ 
+       url("/fonts/Wassail.svg#400")format("svg"); /* Legacy iOS */;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Chillight";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Chillight-EaVR9.tff"); 
+  src: local(""),
+    url("/fonts/Chillight.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("/fonts/Chillight.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("/fonts/Chillight.woff")
+      format("woff"),
+    /* Modern Browsers */ url("/fonts/Chillight.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("/fonts/Chillight.svg#400")
+      format("svg"); /* Legacy iOS */;
+  font-display: swap;
+}
+
 
 /* Custom font classes */
-.summer-days-title {
-  font-family: 'Summer Days', sans-serif;
-}
-
+.font-chillight {
+  font-family: Chillight, sans-serif;
+  }
+  
 .font-trinstam {
-  font-family: 'Trinstam', sans-serif;
+  font-family: 'Occult Overture', sans-serif;
 }
 
 .font-nelo {
-  font-family: 'Nelo', sans-serif;
+  font-family: 'Wassail', sans-serif;
 }
 
-.font-flying-debris {
-  font-family: 'Flying Debris', cursive;
+.font-VANILA {
+  font-family: 'VANILA', sans-serif; 
 }

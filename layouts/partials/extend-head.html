@@ -1,23 +1,14 @@
-<<<<<<< HEAD
-<link rel="stylesheet" href="https://use.typekit.net/aps1owv.css">
-
-{{ $custom := resources.Get "css/custom.css" }}
-{{ if $custom }}
-  {{ $style := $custom | resources.Minify | resources.Fingerprint "sha512" }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
-{{ end }}
-=======
 <!-- Custom Fonts -->
-<link rel="stylesheet" href="https://use.typekit.net/aps1owv.css">
+<link rel="stylesheet" href="{{ "css/chillight-font.css" | relURL }}">
 
 <!-- Custom CSS -->
 {{ $custom := resources.Get "css/custom.css" }}
 {{ if $custom }}
-  {{ $customCSS := $custom | resources.Minify | resources.Fingerprint "sha512" }}
-  <link 
-    rel="stylesheet" 
-    href="{{ $customCSS.RelPermalink }}" 
-    integrity="{{ $customCSS.Data.Integrity }}" 
+  {{ $customCSS := $custom | resources.PostCSS | resources.Minify | resources.Fingerprint "sha512" }}
+  <link
+    rel="stylesheet"
+    href="{{ $customCSS.RelPermalink }}"
+    integrity="{{ $customCSS.Data.Integrity }}"
     crossorigin="anonymous"
   >
 {{ end }}
@@ -28,10 +19,10 @@
 {{ if hugo.IsProduction }}
   {{ $css = $css | minify | fingerprint "sha512" }}
 {{ end }}
-<link 
-  rel="stylesheet" 
-  href="{{ $css.RelPermalink }}" 
-  integrity="{{ $css.Data.Integrity }}" 
+<link
+  rel="stylesheet"
+  href="{{ $css.RelPermalink }}"
+  integrity="{{ $css.Data.Integrity }}"
   crossorigin="anonymous"
 >
 
@@ -40,10 +31,21 @@
 {{ if hugo.IsProduction }}
   {{ $js = $js | minify | fingerprint "sha512" }}
 {{ end }}
-<script 
-  type="text/javascript" 
-  src="{{ $js.RelPermalink }}" 
-  integrity="{{ $js.Data.Integrity }}" 
+<script
+  type="text/javascript"
+  src="{{ $js.RelPermalink }}"
+  integrity="{{ $js.Data.Integrity }}"
   crossorigin="anonymous"
 ></script>
->>>>>>> f787f0b (new theme , eek)
+
+<style>
+  :root {
+    --background-color: #1a1a1a;
+    --text-color: #f0f0f0;
+  }
+
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+</style>

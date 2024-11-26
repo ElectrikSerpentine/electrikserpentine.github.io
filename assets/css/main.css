@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "daisyui";
+
 /* Import custom fonts */
 @import 'custom-fonts.css';
-@import "flying-debris-font.css";
-@import "nelo-font.css";
-@import "summer-days-font.css";
-@import "trinstam-font.css";
+@import "chillight-font.css";
+@import "wassail-font.css";
+@import "vanila-font.css";
+@import "occult-overture-font.css";
+
+.font-wassail {
+	font-family: 'Wassail', sans-serif;
+}
+
+.font-chillight {
+	font-family: 'Chillight', sans-serif;
+}
+
+.font-trinstam {
+	font-family: 'Occult Overture', sans-serif;
+}
+
+.font-vanila {
+	font-family: 'VANILA', sans-serif;
+}

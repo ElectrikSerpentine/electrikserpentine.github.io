@@ -1,157 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="ANALYZE_INJECTED_CODE" value="false" />
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="599664bf-3f0d-4386-992b-884eb1a400ce" name="Changes" comment="adding a few more stuff.">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.gitmodules" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3315be08-f5f6-43c3-a9a4-b4bf46b1af61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace 2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/archetypes/default 2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/config.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/languages.de.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/languages.en.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/languages.es.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/languages.ja.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/languages.zh-Hans.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/markup.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/menus.de.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/menus.en.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/menus.es.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/menus.ja.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/menus.zh-Hans.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/module.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/params.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/_default/taxonomies.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hugo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/congo" beforeDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/themes/blist/layouts/partials/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/themes/blist/layouts/partials/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/blist/layouts/partials/translation_link.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/blist/theme.toml" beforeDir="false" />
->>>>>>> f787f0b (new theme , eek)
+      <change beforePath="$PROJECT_DIR$/assets/css/custom-fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/custom-fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/flying-debris-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/nelo-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/paginator.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/paginator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/paginator.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/site.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/site.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/site.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/summer-days-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/trinstam-font.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Flying-Debris.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/KARMEN.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Mad Squire.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Mystiqua.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Nelo.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Summer Days.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/SwankySpecial-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Trinstam.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/Yellowtail Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/about/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/about/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/contact/social/github/github.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/contact/social/github/github.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hugo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/hugo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hugo_stats.json" beforeDir="false" afterPath="$PROJECT_DIR$/hugo_stats.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/baseof.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/baseof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/simple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/_default/taxonomy.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/_default/taxonomy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/blog-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/blog-card.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/extend-head.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/extend-head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/home/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/home/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/meta/date 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/meta/date-updated.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/meta/date-updated.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/meta/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/meta/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/meta/word-count.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/meta/word-count.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/navigation.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/partials/navigation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/site-footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/partials/translations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/audio.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/shortcodes/audio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.modules.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.modules.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.pnpm/autoprefixer@10.4.20_postcss@8.4.49/node_modules/caniuse-lite" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.pnpm/autoprefixer@10.4.20_postcss@8.4.49/node_modules/caniuse-lite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.pnpm/browserslist@4.24.2/node_modules/caniuse-lite" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.pnpm/browserslist@4.24.2/node_modules/caniuse-lite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.pnpm/browserslist@4.24.2/node_modules/electron-to-chromium" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.pnpm/browserslist@4.24.2/node_modules/electron-to-chromium" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.pnpm/postcss@8.4.49/node_modules/nanoid" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.pnpm/postcss@8.4.49/node_modules/nanoid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contact/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contact/social/github/github/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact/social/github/github/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contact/social/instagram/instagram/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/contact/social/instagram/instagram/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/posts/fuck-my-balls/fuck-my-balls/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/posts/fuck-my-balls/fuck-my-balls/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/posts/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/posts/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/about/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/about/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/bangbang/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/bangbang/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/contact/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/content/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/content/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/first-blog-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/first-blog-post/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/home/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/home/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/home/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/welcome/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/welcome/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/css/styles.css_c05693c31b3b8ccdcbac2584cc6e559c.content" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/css/styles.css_c05693c31b3b8ccdcbac2584cc6e559c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/css/styles.css_fa79e4d50ca5ee59663ed74e679d0bec.content" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/css/styles.css_fa79e4d50ca5ee59663ed74e679d0bec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileColors">
+    <fileColor scope="All Changed Files" color="Rose" />
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="SIGN_OFF_COMMIT" value="true" />
-    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {}
-}</component>
-  <component name="GitLabDefaultAccount">
-    <option name="defaultAccountId" value="2e828a6d-dc25-4ea4-b220-76c1041c4bdc" />
-  </component>
-  <component name="GitToolBoxStore">
-    <option name="recentBranches">
-      <RecentBranches>
-        <option name="branchesForRepo">
-          <list>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1728983534" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/themes/ananke" />
-            </RecentBranchesForRepo>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1731078511" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="feauture-branch" />
-                    <option name="lastUsedInstant" value="1731078431" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
-            </RecentBranchesForRepo>
-            <RecentBranchesForRepo>
-              <option name="branches">
-                <list>
-                  <RecentBranch>
-                    <option name="branchName" value="dev" />
-                    <option name="lastUsedInstant" value="1731726992" />
-                  </RecentBranch>
-                </list>
-              </option>
-              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/themes/congo" />
-            </RecentBranchesForRepo>
-          </list>
-        </option>
-      </RecentBranches>
-    </option>
-  </component>
-<<<<<<< HEAD
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ElectrikSerpentine/electrikserpentine.github.io",
-    "accountId": "b8b835fb-bed2-420d-9d04-d50340e240b2"
-  }
-}]]></component>
-=======
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/apvarun/blist-hugo-theme.git&quot;,
-    &quot;accountId&quot;: &quot;b8b835fb-bed2-420d-9d04-d50340e240b2&quot;
-  }
-}</component>
->>>>>>> f787f0b (new theme , eek)
   <component name="HugoPluginSettings">
-    <option name="customHugoPath" value="$USER_HOME$/go/bin/hugo" />
+    <option name="customHugoPath" value="" />
     <option name="defaultHugoNewOptions" value="" />
-    <option name="useCustomPath" value="true" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;00000072&quot;,
-  &quot;associatedIndex&quot;: 7
+  &quot;customColor&quot;: &quot;a2878aff&quot;,
+  &quot;associatedIndex&quot;: -1
 }</component>
-  <component name="ProjectId" id="2nB4lcg66ghpEmAy6Xgtnzno8qU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2pMk3mpg1ZrFAXJpPTAqekjwxSj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;Node.js.postcss.config.js.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;20.17.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;20.17.6&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/electrik/Documents/GitHub/electrikserpentine.github.io/layouts&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;22.11.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;22.10.0&quot;,
     &quot;localPrefix&quot;: &quot;&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -159,56 +130,13 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/electrik/Documents/GitHub/electrikserpentine.github.io/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.scopes&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-=======
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Node.js.postcss.config.js.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
-    "javascript.nodejs.core.library.configured.version": "20.17.0",
-    "javascript.nodejs.core.library.typings.version": "20.17.6",
-    "last_opened_file_path": "/Users/electrik/Documents/GitHub/electrikserpentine.github.io/layouts",
-    "localPrefix": "",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.stylelint": "/Users/electrik/Documents/GitHub/electrikserpentine.github.io/node_modules/stylelint",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
->>>>>>> f787f0b (new theme , eek)
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/layouts" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="postcss.config.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/postcss.config.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Node.js.postcss.config.js" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -217,185 +145,23 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration useDefault="false">$USER_HOME$/.subversion</configuration>
-  </component>
-  <component name="SwiftWorkspaceSettings">
-    <option name="detectedToolchain" value="true" />
-    <option name="toolchainPathValue" value="/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain" />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="599664bf-3f0d-4386-992b-884eb1a400ce" name="Changes" comment="" />
-      <created>1728433287338</created>
+      <changelist id="3315be08-f5f6-43c3-a9a4-b4bf46b1af61" name="Changes" comment="" />
+      <created>1732583134798</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1728433287338</updated>
-      <workItem from="1728433289708" duration="54000" />
-      <workItem from="1728433808257" duration="1806000" />
-      <workItem from="1728435640101" duration="285000" />
-      <workItem from="1728435947306" duration="32000" />
-      <workItem from="1728436000165" duration="7666000" />
-      <workItem from="1728505681351" duration="6924000" />
-      <workItem from="1728982503965" duration="84000" />
-      <workItem from="1728982626892" duration="600000" />
-      <workItem from="1728984670392" duration="4544000" />
-      <workItem from="1728992539850" duration="6217000" />
-      <workItem from="1729011185208" duration="16572000" />
-      <workItem from="1729135747783" duration="703000" />
-      <workItem from="1729136785372" duration="33000" />
-      <workItem from="1729137977033" duration="12125000" />
-      <workItem from="1729164161065" duration="9933000" />
-      <workItem from="1729209818327" duration="22189000" />
-      <workItem from="1729375763895" duration="2645000" />
-      <workItem from="1729849428945" duration="593000" />
-      <workItem from="1729899830269" duration="8557000" />
-      <workItem from="1729984608797" duration="645000" />
-      <workItem from="1730127605211" duration="3416000" />
-      <workItem from="1730173116837" duration="7845000" />
-      <workItem from="1730270159498" duration="6434000" />
-      <workItem from="1730289181588" duration="25352000" />
-      <workItem from="1730654257882" duration="33177000" />
-      <workItem from="1730745064565" duration="706000" />
-      <workItem from="1730746376788" duration="3724000" />
-      <workItem from="1730773096688" duration="4253000" />
-      <workItem from="1730803888895" duration="31222000" />
-      <workItem from="1730937163895" duration="1505000" />
-      <workItem from="1731002848738" duration="663000" />
-      <workItem from="1731003534668" duration="1810000" />
-      <workItem from="1731041134654" duration="7237000" />
-      <workItem from="1731078191906" duration="6658000" />
-      <workItem from="1731270744977" duration="16197000" />
-      <workItem from="1731446503223" duration="690000" />
-      <workItem from="1731447271790" duration="3251000" />
-      <workItem from="1731452221545" duration="22468000" />
-      <workItem from="1731601656106" duration="7052000" />
-      <workItem from="1731658942576" duration="7039000" />
-<<<<<<< HEAD
-      <workItem from="1731784704953" duration="4626000" />
-=======
-      <workItem from="1731784704953" duration="7424000" />
-      <workItem from="1731967755202" duration="12106000" />
-      <workItem from="1732102766990" duration="2316000" />
-      <workItem from="1732108730776" duration="9598000" />
->>>>>>> f787f0b (new theme , eek)
+      <updated>1732583134798</updated>
+      <workItem from="1732583135871" duration="235000" />
+      <workItem from="1732583393807" duration="1100000" />
+      <workItem from="1732625265878" duration="1519000" />
+      <workItem from="1732626809569" duration="4913000" />
+      <workItem from="1732634651055" duration="193000" />
+      <workItem from="1732634859344" duration="16877000" />
     </task>
-    <task id="LOCAL-00001" summary="adding a few more stuff.">
-      <option name="closed" value="true" />
-      <created>1728437555370</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1728437555371</updated>
-    </task>
-    <task id="LOCAL-00002" summary="adding a few more stuff.">
-      <option name="closed" value="true" />
-      <created>1728510915353</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1728510915353</updated>
-    </task>
-    <task id="LOCAL-00003" summary="adding a few more stuff.">
-      <option name="closed" value="true" />
-      <created>1728510935450</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1728510935450</updated>
-    </task>
-    <task id="LOCAL-00004" summary="adding a few more stuff.">
-      <option name="closed" value="true" />
-      <created>1729378661887</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1729378661887</updated>
-    </task>
-    <task id="LOCAL-00005" summary="adding a few more stuff.">
-      <option name="closed" value="true" />
-      <created>1729378671494</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1729378671494</updated>
-    </task>
-    <task id="LOCAL-00006" summary="adding a few more stuff.">
-      <option name="closed" value="true" />
-      <created>1730147217826</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1730147217827</updated>
-    </task>
-    <task id="LOCAL-00007" summary="adding a few more stuff.">
-      <option name="closed" value="true" />
-      <created>1730736717086</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1730736717086</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/master" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/content" />
-      <path value="$PROJECT_DIR$/themes/ananke" />
-    </ignored-roots>
-    <MESSAGE value=".&#10;docs: changelog fixes&#10;&#10;Signed-off-by: Patrick Kollitsch &lt;patrick@davids-neighbour.com&gt;" />
-    <MESSAGE value="." />
-    <MESSAGE value="adding a few more stuff.&#10;&#10;Signed-off-by: electrikyouthh &lt;scribblelyts@gmail.com&gt;" />
-    <MESSAGE value="adding a few more stuff." />
-    <option name="LAST_COMMIT_MESSAGE" value="adding a few more stuff." />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
