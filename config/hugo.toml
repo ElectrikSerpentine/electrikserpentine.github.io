@@ -1,0 +1,182 @@
+baseURL = 'https://electrikserpentine.github.io/'
+languageCode = "en-us"
+title = 'Electrik⚡️Serpentine'
+theme = "blist"
+
+[params]
+  introSubtitle = "The Serpent's Lair of Knowledge & Musings"
+  introPhoto = "/images/intro.jpg"
+  logo = "/images/es-logo.png"
+  introDarkTheme = true
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/electrikyouthh"
+[[params.social]]
+  name = "Instagram"
+  url = "https://instagram.com/electrikyouthx"
+
+# Custom fonts
+customFonts = true
+customFontCSS = "/css/custom-fonts.css"
+uglyURLs = true 
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "istológio"
+  pageRef = "blog"
+  url = "/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "The Serpent"
+  pageRef = "about"
+  url = "/about/"
+  weight = 3
+
+[[menu.main]]
+  name = "Ophis⚡"
+  pageRef = "contact"
+  url = "/contact/"
+  weight = 4
+
+[[menu.main]]
+  name = "Tags"
+  url = "tags"
+  weight = 6
+
+[[menu.main]]
+  name = "Top Post"
+  url = "/blog/emoji-support/"
+  weight = 99
+
+
+[[permalinks]]
+  posts = "/posts/:slug"
+
+enableRobotsTXT =true
+enableEmoji = true
+darkModeToggle = true
+enableSearch = true
+
+[params.pagination]
+  pagerSize = 15
+
+# Customize search parameters for a page
+searchKeys = [
+  "tags",
+  "date",
+  "categories",
+  "summary",
+  "content",
+  "link",
+  "author",
+  "posts",
+  "blog",
+  "about"
+  ]
+
+# Custom copyright - optional
+copyright = "Electrik⚡️Serpentine"
+favicon = "/favicon.ico"
+
+# Color for intro details and social links (not for dark mode)
+# Use any TailwindCSS default color
+# See: https://tailwindcss.com/docs/customizing-colors
+ascentColor = "bg-rose-900"
+
+# The page bundle that is shown on the front page
+frontBundle = "blog"
+
+[params.homepage]
+  showRecent = true
+  recentLimit = 3
+
+# Used to hide the post metadata such as posted date, reading time and word count
+# Can be used at site level or page level
+hideMeta = false
+
+# Add support for Table of contents
+# Can be added to a page level also in markdown frontmatter
+toc = true
+
+# Hide thumbnail in post view, but not on home/blog pages. Can be set in markdown file.
+hidePageThumbnail = false
+
+# Comments system
+[params.comments]
+# Supports disqus
+system = "disqus"
+
+[params.homepage.social]
+# Global params common
+title = "follow the ..."
+description = "🐇"
+
+[[params.homepage.social.icons]]
+  website = "twitter"
+  url = "https://twitter.com/"
+[[params.homepage.social.icons]]
+  website = "telegram"
+  url = "https://t.me/"
+[[params.homepage.social.icons]]
+  website = "github"
+  url = "https://github.com/electrikyouthh"
+[[params.homepage.social.icons]]
+  website = "buymeacoffee"
+  url = "https://www.buymeacoffee.com/"
+[[params.homepage.social.icons]]
+  website = "reddit"
+  url = "https://reddit.com/"
+[[params.homepage.social.icons]]
+  website = "stackoverflow"
+  url = "https://stackoverflow.com/"
+[[params.homepage.social.icons]]
+  website = "instagram"
+  url = "https://instagram.com/electrikyouthx"
+[[params.homepage.social.icons]]
+   website = "facebook"
+  url = "https://facebook.com"
+
+[build]
+  writeStats = true
+
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+  page = ["HTML"]
+
+# syntax highlight settings
+[markup]
+  [markup.highlight]
+    style = "dracula"
+
+[markup.goldmark.parser]
+  wrapStandAloneImageWithinParagraph = false
+
+[markup.goldmark.parser.attribute]
+  block = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.goldmark.renderHooks.image]
+  enableDefault = true
+
+[markup.goldmark.raw.html]
+  ignoreLogs = true  
+
+/*  ignoreLogs = ['warning-goldmark-raw-html'] */
