@@ -67,11 +67,27 @@
   <!-- Dark mode script -->
   <script>
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      document.documentElement.classList.add('synthwave');
+      document.documentElement.classList.add('dark');
+      document.documentElement.setAttribute('data-theme', 'synthwave');
     } else {
-      document.documentElement.setAttribute('data-theme', 'cyberpunk');
       document.documentElement.classList.remove('dark');
+      document.documentElement.setAttribute('data-theme', 'cyberpunk');
     }
   </script>
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- DaisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.6.0/dist/full.css" rel="stylesheet" type="text/css" />
+
+  <!-- Inline CSS to ensure dark background -->
+  <style>
+    html, body {
+      @apply bg-dark-slate-950 text-gray-100;
+    }
+    :root {
+      color-scheme: dark;
+    }
+  </style>
 </head>

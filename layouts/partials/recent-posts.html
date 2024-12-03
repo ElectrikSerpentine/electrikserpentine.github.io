@@ -1,10 +1,39 @@
-<div class="recent-posts">
-  <h2 class="custom-heading">Recent Posts</h2>
-  <ul>
+<div class="recent-posts bg-stone-100 dark:bg-stone-800 p-6 rounded-lg shadow-md">
+  <h2 class="custom-heading text-2xl font-occultOverture mb-4 text-indigo-700 dark:text-indigo-300">Recent Posts</h2>
+  <ul class="space-y-2">
     {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-      <li>
-        <a href="{{ .Permalink }}" class="custom-link">{{ .Title }}</a>
+      <li class="transition-all duration-200 hover:translate-x-2">
+        <a href="{{ .Permalink }}" class="custom-link text-stone-800 dark:text-stone-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-chillight">
+          {{ .Title }}
+        </a>
       </li>
     {{ end }}
   </ul>
 </div>
+
+<style>
+  .recent-posts {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .recent-posts::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(219, 39, 119, 0.1) 0%, rgba(67, 56, 202, 0.1) 100%);
+    animation: pulse 15s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: translate(-30%, -30%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-30%, -30%) rotate(360deg);
+    }
+  }
+</style>

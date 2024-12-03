@@ -1,13 +1,13 @@
 {{ define "main" }}
-  <article class="max-w-full prose dark:prose">
+  <article class="max-w-full prose dark:prose-dark">
     <header class="text-center">
-      <h1 class="mt-0 mb-4 text-6xl font-extrabold text-stone-850 font-chillight">
+      <h1 class="mt-0 mb-4 text-6xl font-extrabold text-stone-850 dark:text-stone-200 font-chillight">
         {{ .Site.Title }}
       </h1>
-      <p class="text-5xl font-normal text-slate-950 italic font-vanila">
+      <p class="text-5xl font-normal text-slate-950 dark:text-slate-200 italic font-vanila">
         Shahmaran
       </p>
-      <p class="mt-4 text-xl text-slate-400">
+      <p class="mt-4 text-xl text-slate-400 dark:text-slate-500 font-astroviz">
         A Collection of My Thoughts & Musings
       </p>
     </header>
@@ -15,7 +15,7 @@
     {{ $frontBundle := .Site.Params.frontBundle | default "blog" }}
     {{ if .Site.Params.homepage.showRecent }}
       <section class="mt-10">
-        <h2 class="text-2xl font-bold text-center text-blue-700">
+        <h2 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 font-occultOverture">
           Recent Posts
         </h2>
         <div class="container p-6 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
@@ -28,8 +28,8 @@
 
     {{ if gt (len (where .Site.RegularPages.ByDate.Reverse "Type" $frontBundle)) .Site.Params.homepage.recentLimit }}
       <div class="text-center mb-8">
-        <a class="px-8 py-3 rounded transition-colors bg-gray-700
-          text-gray-200 hover:text-white hover:bg-gray-600"
+        <a class="px-8 py-3 rounded transition-colors bg-indigo-700 dark:bg-indigo-800
+          text-gray-200 hover:text-white hover:bg-indigo-600 dark:hover:bg-indigo-700 font-wassail"
           href="{{ (index (.Site.Menus.main) 0).URL | absLangURL }}" lang="{{ .Lang }}">
           {{ i18n "morePosts" }}
         </a>
@@ -37,11 +37,11 @@
     {{ end }}
 
     <section class="mt-10">
-      <h2 class="text-2xl font-bold text-center text-indigo-850">
+      <h2 class="text-2xl font-bold text-center text-fuchsia-900 dark:text-pink-600 font-occultOverture">
         Featured Content
       </h2>
       <!-- Add your featured content, projects, or any other sections you want to highlight -->
-      <p class="mt-4 text-center text-zinc-950">
+      <p class="mt-4 text-center text-zinc-950 dark:text-zinc-200 font-astroviz">
         Here you can add your featured content or projects.
       </p>
     </section>

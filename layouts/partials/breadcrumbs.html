@@ -1,6 +1,7 @@
-<ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+<ol class="text-sm text-stone-700 dark:text-fuchsia-300 print:hidden">
   {{ template "crumb" (dict "p1" . "p2" .) }}
 </ol>
+
 {{ define "crumb" }}
   {{ if .p1.Parent }}
     {{ template "crumb" (dict "p1" .p1.Parent "p2" .p2 ) }}
@@ -9,13 +10,15 @@
   {{ end }}
   <li class="{{ if or (eq .p1 .p2) (.p1.IsHome) }}hidden{{ end }} inline">
     <a
-      class="dark:underline-neutral-600 decoration-neutral-300 hover:underline"
+      class="decoration-stone-400 dark:decoration-zinc-500 hover:underline hover:text-indigo-700 dark:hover:text-indigo-400"
       href="{{ .p1.RelPermalink }}"
-      >{{ if .p1.Title }}
+    >
+      {{ if .p1.Title }}
         {{- .p1.Title -}}
       {{ else }}
         {{- .p1.Section -}}
-      {{ end }}</a
-    ><span class="px-1 text-primary-500">/</span>
+      {{ end }}
+    </a>
+    <span class="px-1 text-indigo-500 dark:text-indigo-400">/</span>
   </li>
 {{ end }}

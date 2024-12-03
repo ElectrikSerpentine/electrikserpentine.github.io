@@ -6,13 +6,12 @@
 
   {{ if $url }}
     {{ $icon := (partial "icon.html" $platform) }}
-
     <a 
       href="{{ $url }}"
       target="_blank"
       rel="noopener noreferrer me"
       title="{{ $platform | title }}"
-      class="inline-block rounded-full hover:text-primary-500 hover:bg-primary-100 dark:hover:text-primary-400 dark:hover:bg-primary-800 mr-3"
+      class="inline-block rounded-full p-2 mr-3 bg-dark-zinc-800 text-gray-300 hover:bg-dark-indigo-700 hover:text-gray-100 transition-colors duration-200"
     >
       {{ with $icon }}
         <span class="icon" style="width: {{ $icon_size }}; height: {{ $icon_size }};">

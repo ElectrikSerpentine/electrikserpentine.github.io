@@ -4,13 +4,13 @@
     <div class="relative">
       <img src="{{ .Params.thumbnail }}" alt="{{ .Params.title }}" class="rounded-lg w-full h-52 object-cover" />
       {{ if not (or (or .Site.Params.hideMeta .Params.hideMeta) false) }}
-      <div class="absolute top-4 right-4 rounded bg-opacity-75 bg-gray-900 text-white text-sm px-2 py-0.5">
+      <div class="absolute top-4 right-4 rounded bg-opacity-75 bg-stone-900 text-stone-100 text-sm px-2 py-0.5">
         {{ partial "date.html" (dict "date" .Date "format" "short") }}
       </div>
       {{ end }}
     </div>
     {{ end }}
-    <div class="my-2 text-xl font-semibold text-primary-700 dark:text-primary-300">{{ .Params.title }}</div>
-    <div class="text-gray-700 dark:text-gray-300">{{ .Params.description }}</div>
+    <div class="my-2 text-xl font-semibold text-indigo-700 dark:text-indigo-300">{{ .Params.title }}</div>
+    <div class="text-stone-700 dark:text-stone-300">{{ .Params.description }}</div>
   </a>
 </div>

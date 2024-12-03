@@ -13,45 +13,26 @@
 /* Tailwind's utility classes - generated based on config file */
 @import "tailwindcss/utilities";
 
-/* daisyui */
-/*@import "daisyui"; */
-
 /* Custom fonts */
 @import "assets/css/custom-fonts.css";
 @import "assets/css/wassail-font.css";
 @import "assets/css/vanila-font.css";
 @import "assets/css/chillight-font.css";
 @import "assets/css/occult-overture-font.css";
+@import "assets/css/astroviz-font.css";
 
-:root {
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --link-color: #3182ce;
-  --link-hover-color: #2c5282;
-}
+/* Base styles */
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-100 dark:bg-gray-950 dark:text-gray-100;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #1a1a1a;
-    --text-color: #f0f0f0;
-    --link-color: #63b3ed;
-    --link-hover-color: #90cdf4;
+  a {
+    @apply text-indigo-400 hover:text-indigo-300;
   }
 }
 
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-a {
-  color: var(--link-color);
-}
-
-a:hover {
-  color: var(--link-hover-color);
-}
-
+/* Table of Contents styles */
 @layer components {
   details.toc[open] summary ~ * {
     animation: slideUp 0.25s ease-in-out;
@@ -69,7 +50,7 @@ a:hover {
   }
 
   details.toc[open] summary svg {
-    @apply transform duration-200 rotate-180 ease-in-out;
+    @apply transform rotate-180 transition duration-200 ease-in-out;
   }
 
   details.toc > ul {
@@ -77,120 +58,131 @@ a:hover {
   }
 
   details.toc ul {
-    @apply list-none;
-    margin-top: 0.125rem /* 2px */ !important;
-    margin-bottom: 0.125rem /* 2px */ !important;
+    @apply list-none my-0.5;
   }
 
   details.toc ul li {
-    margin-top: 0.125rem /* 2px */ !important;
-    margin-bottom: 0.125rem /* 2px */ !important;
+    @apply my-0.5;
   }
 
   details.toc ul li:before {
-    @apply rounded-none bg-gray-400 dark:bg-gray-600;
+    @apply rounded-none bg-gray-600 dark:bg-gray-400;
   }
 
   details.toc ul li a {
-    @apply no-underline text-gray-700 dark:text-gray-200 text-base;
-  }
-
-  a:empty {
-    display: none;
+    @apply no-underline text-gray-600 dark:text-gray-300 text-base;
   }
 }
 
 /* Custom font classes */
-.font-nelo {
-  font-family: 'Wassail', sans-serif;
-}
-
-.font-vanila {
-  font-family: 'VANILA', sans-serif;
-}
-
-.font-trinstam {
-  font-family: 'Occult Overture', sans-serif;
-}
-
-.font-chillight {
-  font-family: 'Chillight', sans-serif;
-}
-
-/* Additional dark mode styles */
-@media (prefers-color-scheme: dark) {
-  .prose {
-    color: var(--text-color);
+@layer utilities {
+  .font-wassail {
+    font-family: 'Wassail', sans-serif;
   }
 
-  .prose a {
-    color: var(--link-color);
+  .font-vanila {
+    font-family: 'VANILA', sans-serif;
   }
 
-  .prose strong {
-    color: #e2e8f0;
+  .font-occult-overture {
+    font-family: 'Occult Overture', sans-serif;
   }
 
-  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-    color: #f7fafc;
+  .font-chillight {
+    font-family: 'Chillight', sans-serif;
   }
 
-  .prose code {
-    background-color: #2d3748;
-    color: #e2e8f0;
-  }
-
-  .prose blockquote {
-    border-left-color: #4a5568;
-    color: #a0aec0;
-  }
-
-  .prose hr {
-    border-color: #4a5568;
-  }
-
-  .prose table {
-    border-color: #4a5568;
-  }
-
-  .prose thead {
-    background-color: #2d3748;
-    color: #e2e8f0;
-  }
-
-  .prose tbody tr {
-    border-bottom-color: #4a5568;
+  .font-astroviz {
+    font-family: 'Astroviz', sans-serif;
   }
 }
 
+/* Dark theme styles */
+@layer base {
+  .dark .prose {
+    @apply text-gray-300;
+  }
 
-/* Custom styles for pagination */
-.pagination .btn {
-  @apply transition-colors duration-300 ease-in-out;
+  .dark .prose a {
+    @apply text-indigo-400;
+  }
+
+  .dark .prose strong {
+    @apply text-gray-100;
+  }
+
+  .dark .prose h1, .dark .prose h2, .dark .prose h3, 
+  .dark .prose h4, .dark .prose h5, .dark .prose h6 {
+    @apply text-gray-100;
+  }
+
+  .dark .prose code {
+    @apply bg-gray-800 text-gray-100;
+  }
+
+  .dark .prose blockquote {
+    @apply bg-transparent border-l-4 border-gray-600 text-gray-300 p-2 my-4;
+  }
+
+  .dark .prose hr {
+    @apply border-gray-600;
+  }
+
+  .dark .prose table {
+    @apply border-gray-600;
+  }
+
+  .dark .prose thead {
+    @apply bg-gray-800 text-gray-100;
+  }
+
+  .dark .prose tbody tr {
+    @apply border-b border-gray-600;
+  }
 }
 
-.pagination .btn:hover {
-  @apply bg-primary text-primary-content;
+/* glitch effect */
+.glitch-effect {
+  position: relative;
+  display: inline-block;
 }
 
-/* Custom styles for social links */
-.social-links .btn-circle {
-  @apply transition-transform duration-300 ease-in-out;
+.glitch-effect::before,
+.glitch-effect::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
 }
 
-.social-links .btn-circle:hover {
-  @apply transform scale-110;
+.glitch-effect::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff00ea;
+  clip: rect(44px, 450px, 56px, 0);
 }
 
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
+.glitch-effect::after {
+  left: -2px;
+  text-shadow: -2px 0 #00ffff;
+  clip: rect(44px, 450px, 56px, 0);
+}
+
+/* Custom styles for pagination and social links */
+@layer components {
   .pagination .btn,
   .social-links .btn-circle {
-    @apply border-gray-600 text-gray-300;
+    @apply border border-gray-400 text-gray-400 transition duration-300 ease-in-out;
   }
 
   .pagination .btn:hover,
   .social-links .btn-circle:hover {
-    @apply border-primary bg-primary text-primary-content;
+    @apply border-indigo-400 bg-indigo-400 text-gray-900;
+  }
+
+  .social-links .btn-circle:hover {
+    @apply transform scale-110;
   }
 }

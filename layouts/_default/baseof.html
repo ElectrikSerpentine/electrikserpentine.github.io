@@ -2,93 +2,58 @@
 <html lang="{{ .Lang }}" itemscope itemtype="http://schema.org/WebPage">
 <head>
     {{- partial "head.html" . -}}
-    <style>
-        /* Custom fonts */
-        @import url("custom-fonts.css");
-        @import url("wassail-font.css");
-        @import url("vanila-font.css");
-        @import url("occult-overture-font.css");
-        @import url("chillight-font.css");
-
-        body {
-            font-family: 'Wassail', 'Arial', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .site-header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-        }
-        .footer {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-        .main-content {
-            background-color: #fff;
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .mobile-menu-button {
-            display: none;
-        }
-        @media (max-width: 768px) {
-            .mobile-menu-button {
-                display: block;
-            }
-        }
-        #dark-mode-toggle {
-            cursor: pointer;
-        }
-        .scroll-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: none;
-            cursor: pointer;
-        }
-        .scroll-to-top.visible {
-            display: block;
-        }
-    </style>
 </head>
-<body class="dark:bg-gray-800 dark:text-white relative flex flex-col min-h-screen">
-    <header class="site-header">
-        <div class="container">
+<body class="bg-gray-900 text-gray-100 dark:bg-gray-950 dark:text-gray-100 relative flex flex-col min-h-screen font-wassail">
+    <header class="bg-dark-slate-900 text-white py-4">
+        <div class="container mx-auto px-4">
             {{- partial "header.html" . -}}
         </div>
     </header>
-    <div class="container">
-        <main class="main-content flex-1">
+
+    <div class="container mx-auto px-4">
+        <main class="flex-1 bg-dark-slate-800 p-8 my-8 rounded-lg shadow-lg">
             {{- block "main" . }}{{- end }}
         </main>
     </div>
-    <footer class="footer">
-        <div class="container">
+
+    <footer class="bg-dark-slate-900 text-white py-4 mt-8">
+        <div class="container mx-auto px-4">
             {{- partial "footer.html" . -}}
         </div>
     </footer>
+
     {{- partial "scripts.html" . -}}
+
+    <button id="dark-mode-toggle" class="fixed bottom-4 left-4 bg-dark-indigo-700 hover:bg-dark-indigo-600 text-white p-2 rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+    </button>
+
+    <button id="scroll-to-top" class="fixed bottom-4 right-4 bg-dark-indigo-700 hover:bg-dark-indigo-600 text-white p-2 rounded-full hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </button>
+
     <script>
-        // Show/hide scroll-to-top button
-        window.addEventListener('scroll', function() {
-            var scrollToTop = document.querySelector('.scroll-to-top');
+        // Dark mode toggle
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        darkModeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+
+        // Scroll-to-top functionality
+        const scrollToTop = document.getElementById('scroll-to-top');
+        window.addEventListener('scroll', () => {
             if (window.pageYOffset > 100) {
-                scrollToTop.classList.add('visible');
+                scrollToTop.classList.remove('hidden');
             } else {
-                scrollToTop.classList.remove('visible');
+                scrollToTop.classList.add('hidden');
             }
+        });
+        scrollToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     </script>
 </body>

@@ -1,0 +1,9 @@
+{{ $dateTime := .date }}
+{{ $dateFormat := .format | default "January 2, 2006" }}
+<time datetime="{{ $dateTime.Format "2006-01-02T15:04:05Z07:00" }}" class="text-gray-300 dark:text-gray-400 font-astroviz">
+  {{ if eq .format "short" }}
+    {{ $dateTime.Format "Jan 2, 2006" }}
+  {{ else }}
+    {{ $dateTime.Format $dateFormat }}
+  {{ end }}
+</time>

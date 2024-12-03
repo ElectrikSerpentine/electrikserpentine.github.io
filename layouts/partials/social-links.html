@@ -2,10 +2,10 @@
 <div class="flex justify-center gap-x-4">
   {{ range . }}
     <a 
-      href="{{ .Page.Params.url }}" 
-      target="_blank" 
+      href="{{ .Page.Params.url }}"
+      target="_blank"
       rel="noopener noreferrer"
-      class="inline-block rounded-full hover:text-primary-500 hover:bg-primary-100 dark:hover:text-primary-400 dark:hover:bg-primary-800"
+      class="inline-block rounded-full p-2 bg-dark-zinc-800 text-gray-300 hover:bg-dark-indigo-700 hover:text-gray-100 transition-colors duration-200"
       title="{{ .Page.Title }}"
     >
       {{ $icon := (partial "icon.html" (lower .Page.Title)) }}

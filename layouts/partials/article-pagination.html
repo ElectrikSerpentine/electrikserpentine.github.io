@@ -7,22 +7,22 @@
       {{ $prev = .NextInSection }}
     {{ end }}
     <div class="pt-8">
-      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <hr class="border-dotted border-stone-300 dark:border-stone-600" />
       <div class="flex justify-between pt-3">
         <span>
           {{ if $prev }}
             <a class="group flex" href="{{ $prev.RelPermalink }}">
               <span
-                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                class="me-2 text-stone-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-indigo-700 dark:text-stone-300 dark:group-hover:text-indigo-400"
                 ><span class="ltr:inline rtl:hidden">&larr;</span
                 ><span class="ltr:hidden rtl:inline">&rarr;</span></span
               >
               <span class="flex flex-col">
                 <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-indigo-500"
                   >{{ $prev.Title | emojify }}</span
                 >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                <span class="mt-[0.1rem] text-xs text-stone-500 dark:text-stone-400">
                   {{ if .Params.showDate | default (.Site.Params.article.showDate | default true) }}
                     {{ partial "meta/date.html" $prev.Date }}
                   {{ end }}
@@ -36,17 +36,17 @@
             <a class="group flex text-right" href="{{ $next.RelPermalink }}">
               <span class="flex flex-col">
                 <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-indigo-500"
                   >{{ $next.Title | emojify }}</span
                 >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                <span class="mt-[0.1rem] text-xs text-stone-500 dark:text-stone-400">
                   {{ if .Params.showDate | default (.Site.Params.article.showDate | default true) }}
                     {{ partial "meta/date.html" $next.Date }}
                   {{ end }}
                 </span>
               </span>
               <span
-                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                class="ms-2 text-stone-700 transition-transform group-hover:translate-x-[2px] group-hover:text-indigo-700 dark:text-stone-300 dark:group-hover:text-indigo-400"
                 ><span class="ltr:inline rtl:hidden">&rarr;</span
                 ><span class="ltr:hidden rtl:inline">&larr;</span></span
               >

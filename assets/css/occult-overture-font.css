@@ -4,14 +4,11 @@
   font-weight: 400;
   src: url("/fonts/Occult Overture.tff"); 
   src: local(""),
-    url("/fonts/Occult Overture.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("/fonts/Occult Overture.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("/fonts/Occult Overture.woff")
-      format("woff"),
-    /* Modern Browsers */ url("/fonts/Occult Overture.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("/fonts/Occult Overture.svg#400")
-      format("svg"); /* Legacy iOS */;
+       url("/fonts/Occult Overture.eot?#iefix") format("embedded-opentype"),
+       url("/fonts/Occult Overture.woff2") format("woff2"),
+       url("/fonts/Occult Overture.woff") format("woff"),
+       url("/fonts/Occult Overture.ttf") format("truetype"),
+       url("/fonts/Occult Overture.svg#400") format("svg"); 
   font-display: swap;
 }
 

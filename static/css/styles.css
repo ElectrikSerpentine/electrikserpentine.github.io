@@ -5,38 +5,28 @@
 @import "tailwindcss/components";
 
 /* Site Specific */
-@import "site.css";
+@import "assets/css/site";
 
 /* Paginator */
-@import "paginator.css";
+@import "assets/css/paginator";
 
 /* Tailwind's utility classes - generated based on config file */
 @import "tailwindcss/utilities";
 
-/* daisyui */
-@import "daisyui";
-
 /* Custom fonts */
-@import "custom-fonts.css";
-@import "wassail-font.css";
-@import "vanila-font.css";
-@import "trinstam-font.css";
-@import "occult-overture-font.css";
+@import "assets/css/custom-fonts.css";
+@import "assets/css/wassail-font.css";
+@import "assets/css/vanila-font.css";
+@import "assets/css/chillight-font.css";
+@import "assets/css/occult-overture-font.css";
+@import "assets/css/astroviz-font.css";
+@import "assets/css/wassailnumbers-font.css";
 
 :root {
-  --background-color: #ffffff;
-  --text-color: #333333;
-  --link-color: #3182ce;
-  --link-hover-color: #2c5282;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #1a1a1a;
-    --text-color: #f0f0f0;
-    --link-color: #63b3ed;
-    --link-hover-color: #90cdf4;
-  }
+  --background-color: #1a1a1a;
+  --text-color: #f0f0f0;
+  --link-color: #63b3ed;
+  --link-hover-color: #90cdf4;
 }
 
 body {
@@ -52,56 +42,63 @@ a:hover {
   color: var(--link-hover-color);
 }
 
-@layer components {
-  details.toc[open] summary ~ * {
-    animation: slideUp 0.25s ease-in-out;
-  }
+/* Table of Contents styles */
+details.toc[open] summary ~ * {
+  animation: slideUp 0.25s ease-in-out;
+}
 
-  @keyframes slideUp {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
   }
-
-  details.toc[open] summary svg {
-    @apply transform duration-200 rotate-180 ease-in-out;
-  }
-
-  details.toc > ul {
-    @apply ml-4;
-  }
-
-  details.toc ul {
-    @apply list-none;
-    margin-top: 0.125rem /* 2px */ !important;
-    margin-bottom: 0.125rem /* 2px */ !important;
-  }
-
-  details.toc ul li {
-    margin-top: 0.125rem /* 2px */ !important;
-    margin-bottom: 0.125rem /* 2px */ !important;
-  }
-
-  details.toc ul li:before {
-    @apply rounded-none bg-gray-400 dark:bg-gray-600;
-  }
-
-  details.toc ul li a {
-    @apply no-underline text-gray-700 dark:text-gray-200 text-base;
-  }
-
-  a:empty {
-    display: none;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+details.toc[open] summary svg {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+details.toc > ul {
+  margin-left: 1rem;
+}
+
+details.toc ul {
+  list-style-type: none;
+  margin-top: 0.125rem !important;
+  margin-bottom: 0.125rem !important;
+}
+
+details.toc ul li {
+  margin-top: 0.125rem !important;
+  margin-bottom: 0.125rem !important;
+}
+
+details.toc ul li:before {
+  border-radius: 0;
+  background-color: #4a5568;
+}
+
+details.toc ul li a {
+  text-decoration: none;
+  color: #4a5568;
+  font-size: 1rem;
+}
+
+.dark details.toc ul li:before {
+  background-color: #a0aec0;
+}
+
+.dark details.toc ul li a {
+  color: #e2e8f0;
+}
+
 /* Custom font classes */
-.font-nelo {
+.font-wassail {
   font-family: 'Wassail', sans-serif;
 }
 
@@ -109,7 +106,7 @@ a:hover {
   font-family: 'VANILA', sans-serif;
 }
 
-.font-trinstam {
+.font-occult-overture {
   font-family: 'Occult Overture', sans-serif;
 }
 
@@ -117,50 +114,76 @@ a:hover {
   font-family: 'Chillight', sans-serif;
 }
 
-/* Additional dark mode styles */
-@media (prefers-color-scheme: dark) {
-  .prose {
-    color: var(--text-color);
-  }
-
-  .prose a {
-    color: var(--link-color);
-  }
-
-  .prose strong {
-    color: #e2e8f0;
-  }
-
-  .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
-    color: #f7fafc;
-  }
-
-  .prose code {
-    background-color: #2d3748;
-    color: #e2e8f0;
-  }
-
-  .prose blockquote {
-    border-left-color: #4a5568;
-    color: #a0aec0;
-  }
-
-  .prose hr {
-    border-color: #4a5568;
-  }
-
-  .prose table {
-    border-color: #4a5568;
-  }
-
-  .prose thead {
-    background-color: #2d3748;
-    color: #e2e8f0;
-  }
-
-  .prose tbody tr {
-    border-bottom-color: #4a5568;
-  }
+.font-astroviz {
+  font-family: 'Astroviz', sans-serif;
 }
-  }
+
+.font-wassailnumbers {
+  font-family: 'WassailNumbers';
+}
+
+/* Dark theme styles */
+.dark .prose {
+  color: var(--text-color);
+}
+
+.dark .prose a {
+  color: var(--link-color);
+}
+
+.dark .prose strong {
+  color: #e2e8f0;
+}
+
+.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 {
+  color: #f7fafc;
+}
+
+.dark .prose code {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+.dark .prose blockquote {
+  background-color: transparent;
+  border-left-color: #4a5568;
+  color: var(--text-color);
+  padding: 0.5em 1em;
+  margin: 1em 0;
+}
+
+.dark .prose hr {
+  border-color: #4a5568;
+}
+
+.dark .prose table {
+  border-color: #4a5568;
+}
+
+.dark .prose thead {
+  background-color: #2d3748;
+  color: #e2e8f0;
+}
+
+.dark .prose tbody tr {
+  border-bottom-color: #4a5568;
+}
+
+/* Custom styles for pagination and social links */
+.pagination .btn,
+.social-links .btn-circle {
+  border-color: #a0aec0;
+  color: #a0aec0;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination .btn:hover,
+.social-links .btn-circle:hover {
+  border-color: var(--link-color);
+  background-color: var(--link-color);
+  color: var(--background-color);
+}
+
+.social-links .btn-circle:hover {
+  transform: scale(1.1);
 }

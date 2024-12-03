@@ -83,7 +83,7 @@ favicon = "/favicon.ico"
 ascentColor = "bg-emerald-500"
 
 # The page bundle that is shown on the front page
-frontBundle = "blog"
+frontBundle = "posts"
 
 [params.homepage]
   showRecent = true
@@ -148,10 +148,11 @@ description = "🐇"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
   term = ["HTML", "RSS"]
-  page = ["HTML"]
+  404 = ['HTML']
 
 # syntax highlight settings
 [markup]

@@ -1,32 +1,32 @@
 {{ define "main" }}
-  <style>
-      @font-face {
+<style>
+  @font-face {
     font-family: 'VANILA';
     src: url('/fonts/VANILA.ttf');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
-    body {
-      font-family: 'Vanila';
-      font-weight: 400;
-    }
-  </style>
+</style>
 
-  <article class="max-w-full px-6 mx-auto">
-    <header class="container mx-auto text-center">
-      {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default true) }}
+<article class="max-w-full px-6 mx-auto">
+  <header class="container mx-auto text-center">
+    {{ if .Params.showBreadcrumbs | default (.Site.Params.article.showBreadcrumbs | default true) }}
+      <div class="mb-6 text-gray-400 dark:text-gray-500 text-sm">
         {{ partial "breadcrumbs.html" . }}
-      {{ end }}
-      <h1 class="mt-0 text-4xl font-extrabold text-neutral-400 dark:text-neutral leading-tight">
-        {{ .Title | emojify }}
-      </h1>
-    </header>
-    <section class="prose mt-6 max-w-prose mx-auto dark:prose-invert">
-      {{ .Content | emojify }}
-    </section>
-    <footer class="pt-8 max-w-prose mx-auto">
-      {{ partial "sharing-links.html" . }}
-    </footer>
-  </article>
+      </div>
+    {{ end }}
+    <h1 class="mt-0 text-5xl md:text-7xl font-extrabold text-gray-100 dark:text-gray-100 text-center leading-tight mb-10">
+      {{ .Title | emojify }}
+    </h1>
+  </header>
+
+  <section class="prose dark:prose-invert mt-8 max-w-prose mx-auto text-center">
+    {{ .Content | emojify }}
+  </section>
+
+  <footer class="pt-10 max-w-prose mx-auto text-base">
+    {{ partial "sharing-links.html" . }}
+  </footer>
+</article>
 {{ end }}

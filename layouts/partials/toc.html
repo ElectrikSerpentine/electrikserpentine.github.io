@@ -11,15 +11,15 @@
   {{- end -}}
   {{- $firstHeaderLevel := len (seq (index (findRE "[1-4]" (index $headers 0) 1) 0)) -}}
   {{- $.Scratch.Set "bareul" slice -}}
-  <details id="TableOfContents" class="px-4 mt-4 bg-gray-100 dark:bg-gray-800 rounded toc">
-    <summary class="flex items-center font-bold py-2 px-4 cursor-pointer justify-between select-none text-gray-800 dark:text-gray-200">
+  <details id="TableOfContents" class="px-4 mt-4 bg-dark-zinc-800 rounded toc">
+    <summary class="flex items-center font-bold py-2 px-4 cursor-pointer justify-between select-none text-gray-200">
       <span>Table of contents</span>
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <polyline points="6 9 12 15 18 9"></polyline>
      </svg>
     </summary>
-    <ul class="mt-2 pb-4 text-gray-700 dark:text-gray-300">
+    <ul class="mt-2 pb-4 text-gray-300">
       {{- range seq (sub $firstHeaderLevel $largest) -}}
       <ul>
         {{- $.Scratch.Add "bareul" (sub (add $largest .) 1) -}}
@@ -65,10 +65,10 @@
             {{- end -}}
           {{- end -}}
       <li>
-        <a href="#{{- $cleanedID  -}}" class="hover:text-gray-900 dark:hover:text-gray-100">{{- $header | safeHTML -}}</a>
+        <a href="#{{- $cleanedID  -}}" class="hover:text-gray-100 transition-colors duration-200">{{- $header | safeHTML -}}</a>
         {{- else -}}
       <li>
-        <a href="#{{- $cleanedID -}}" class="hover:text-gray-900 dark:hover:text-gray-100">{{- $header | safeHTML -}}</a>
+        <a href="#{{- $cleanedID -}}" class="hover:text-gray-100 transition-colors duration-200">{{- $header | safeHTML -}}</a>
         {{- end -}}
         {{- end -}}
         {{ $firstHeaderLevel := $largest }}

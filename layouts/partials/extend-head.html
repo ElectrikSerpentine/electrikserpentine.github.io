@@ -1,5 +1,9 @@
 <!-- Custom Fonts -->
 <link rel="stylesheet" href="{{ "css/chillight-font.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/astroviz-font.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/occult-overture-font.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/vanila-font.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/wassail-font.css" | relURL }}">
 
 <!-- Custom CSS -->
 {{ $custom := resources.Get "css/custom.css" }}
@@ -40,12 +44,47 @@
 
 <style>
   :root {
-    --background-color: #1a1a1a;
-    --text-color: #f0f0f0;
+    --background-color: theme('colors.zinc.950');
+    --text-color: theme('colors.gray.300');
   }
 
   body {
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: theme('fontFamily.astroviz'), theme('fontFamily.chillight'), theme('fontFamily.occultOverture'), theme('fontFamily.vanila'), theme('fontFamily.wassail'), sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: theme('colors.gray.100');
+  }
+
+  a {
+    color: theme('colors.indigo.400');
+  }
+
+  a:hover {
+    color: theme('colors.indigo.300');
+  }
+
+  .prose {
+    color: theme('colors.gray.300');
+  }
+
+  .prose strong {
+    color: theme('colors.gray.100');
+  }
+
+  .prose blockquote {
+    color: theme('colors.gray.100');
+    background-color: theme('colors.gray.800');
+  }
+
+  .prose code {
+    color: theme('colors.gray.100');
+  }
+
+  .prose pre {
+    color: theme('colors.gray.200');
+    background-color: theme('colors.gray.800');
   }
 </style>

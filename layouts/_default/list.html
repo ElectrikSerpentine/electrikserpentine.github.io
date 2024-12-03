@@ -1,69 +1,66 @@
 {{ define "main" }}
-  <style>
-    @font-face {
-      font-family: 'Wassail';
-      src: url('/assets/css/Wassail.woff2') format('woff2');
-      font-weight: 400;
-      font-style: normal;
-    }
-    body {
-      font-family: 'Wassail', sans-serif;
-      font-weight: 400;
-    }
-  </style>
+<style>
+  @font-face {
+    font-family: 'Wassail';
+    src: url('/assets/css/Wassail.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    unicode-range: "U+0000-0030, U+0041-005A, U+0061-007A, U+00A0-00FF"; 
+  }
+</style>
 
-  {{ $toc := and (.Params.showTableOfContents | default (.Site.Params.list.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
-  
-  <header class="container px-6 pt-6 mx-auto text-center">
-    {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default true) }}
-      {{ partial "breadcrumbs.html" . }}
-    {{ end }}
-    <h1 class="mt-0 text-3xl font-extrabold text-neutral-200 dark:text-neutral-200 leading-tight">{{ .Title }}</h1>
-  </header>
+{{ $toc := and (.Params.showTableOfContents | default (.Site.Params.list.showTableOfContents | default false)) (in .TableOfContents "<ul") }}
 
-  <section class="{{ if $toc -}}mt-12{{- else -}}mt-0{{- end }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row container mx-auto px-6">
-    {{ if $toc }}
-      <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
-        <div class="toc ps-5 lg:sticky lg:top-10">
-          {{ partial "toc.html" . }}
-        </div>
-      </div>
-    {{ end }}
-    <div class="min-h-0 min-w-0 max-w-prose grow mx-auto">
-      {{ .Content | emojify }}
-    </div>
-  </section>
-
-  {{ if .Data.Pages }}
-    <section class="container p-6 mx-auto">
-      {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
-        {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
-          <h2 class="mt-12 text-2xl font-bold text-neutral-200 first:mt-8 dark:text-neutral-200 text-center">
-            {{ .Key }}
-          </h2>
-          <hr class="w-36 border-dotted border-neutral-600 mx-auto mb-6" />
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-            {{ range .Pages }}
-              {{- partial "blog-card.html" . -}}
-            {{ end }}
-          </div>
-        {{ end }}
-      {{ else }}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-          {{ range (.Paginate .Pages).Pages }}
-            {{- partial "blog-card.html" . -}}
-          {{ end }}
-        </div>
-      {{ end }}
-    </section>
-    {{ partial "pagination.html" . }}
-  {{ else }}
-    <section class="prose mt-10 dark:prose-invert mx-auto">
-      <p class="border-t border-neutral-700 py-8 text-center text-neutral-200">
-        <em>{{ i18n "list.no_articles" | emojify }}</em>
-      </p>
-    </section>
+<header class="container px-6 pt-6 mx-auto text-center">
+  {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default true) }}
+    {{ partial "breadcrumbs.html" . }}
   {{ end }}
+  <h1 class="mt-4 text-4xl font-extrabold text-center leading-tight text-gray-100 dark:text-gray-100">{{ .Title }}</h1>
+</header>
 
-  {{- partial "social.html" . -}}
+<section class="{{ if $toc -}}mt-5{{- else -}}mt-5{{- end }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row container mx-auto px-6">
+  {{ if $toc }}
+  <div class="order-first px-0 lg:order-last lg:max-w-xs lg:ps-8">
+    <div class="toc ps-5 lg:sticky lg:top-10">
+      {{ partial "toc.html" . }}
+    </div>
+  </div>
+  {{ end }}
+  <div class="min-h-0 min-w-0 max-w-prose grow mx-auto">
+    {{ .Content | emojify }}
+  </div>
+</section>
+
+{{ if .Data.Pages }}
+<section class="container p-6 mx-auto">
+  {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
+    {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
+    <h2 class="mt-4 text-4xl font-bold first:mt-5 text-center text-gray-100 dark:text-gray-100">
+      {{ .Key }}
+    </h2>
+    <hr class="w-36 border-dotted mx-auto mb-6 border-gray-800 dark:border-gray-800" />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+      {{ range .Pages }}
+        {{- partial "blog-card.html" . -}}
+      {{ end }}
+    </div>
+    {{ end }}
+  {{ else }}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+      {{ range (.Paginate .Pages).Pages }}
+        {{- partial "blog-card.html" . -}}
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
+{{ partial "pagination.html" . }}
+{{ else }}
+<section class="prose mt-10 dark:prose-invert mx-auto">
+  <p class="border-t border-gray-800 dark:border-gray-800 py-8 text-center">
+    <em>{{ i18n "list.no_articles" | emojify }}</em>
+  </p>
+</section>
+{{ end }}
+
+{{- partial "social.html" . -}}
 {{ end }}

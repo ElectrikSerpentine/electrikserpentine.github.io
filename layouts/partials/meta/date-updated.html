@@ -1,4 +1,3 @@
-<time datetime="{{ . }}">
+<time datetime="{{ . }}" class="text-gray-300 dark:text-gray-400 font-astroviz">
   {{- i18n "article.date_updated" (dict "Date" (partial "functions/date.html" .)) | markdownify | emojify -}}
 </time>
-

@@ -1,5 +1,5 @@
 .pagination {
-  @apply inline-flex border rounded px-1 dark:border-gray-700;
+  @apply inline-flex border rounded px-1 dark:border-gray-700 bg-transparent dark:bg-gray-800;
 }
 
 .page-item {
@@ -7,7 +7,7 @@
 }
 
 a.page-link {
-  @apply px-3 py-1 block dark:text-gray-300;
+  @apply px-3 py-1 block text-gray-700 dark:text-gray-300;
 }
 
 .page-item.active {
@@ -15,20 +15,18 @@ a.page-link {
 }
 
 .page-item.disabled {
-  @apply text-gray-400 hover:bg-transparent hover:text-gray-400 cursor-not-allowed dark:text-gray-500 dark:hover:text-gray-500;
+  @apply text-gray-400 hover:bg-transparent hover:text-gray-400 cursor-not-allowed dark:text-gray-500 dark:hover:text-gray-500 dark:hover:bg-transparent;
 }
 
 /* Additional dark mode styles */
-@media (prefers-color-scheme: dark) {
-  .pagination {
-    @apply bg-gray-800;
-  }
+.dark .pagination {
+  @apply bg-gray-800 border-gray-700;
+}
 
-  .page-item {
-    @apply text-gray-300;
-  }
+.dark .page-item {
+  @apply text-gray-300;
+}
 
-  .page-item:hover {
-    @apply bg-gray-700;
-  }
+.dark .page-item:hover {
+  @apply bg-gray-700 text-white;
 }

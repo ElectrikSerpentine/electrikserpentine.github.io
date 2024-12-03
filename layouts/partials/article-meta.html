@@ -1,23 +1,20 @@
 {{ with . }}
-<div class="flex flex-wrap items-center text-sm text-gray-500 dark:text-gray-400">
+<div class="flex flex-wrap items-center text-sm text-stone-500 dark:text-stone-400">
   {{ if .Date }}
     <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
       {{ partial "date.html" (dict "date" .Date "format" "long") }}
     </time>
   {{ end }}
-
   {{ if and .Date .Params.categories }}
     <span class="mx-2">&middot;</span>
   {{ end }}
-
   {{ with .Params.categories }}
     <div class="mr-2">
       {{ range . }}
-        <a href="{{ "categories/" | absLangURL }}{{ . | urlize }}" class="mr-2 hover:text-gray-900 dark:hover:text-gray-100">{{ . }}</a>
+        <a href="{{ "categories/" | absLangURL }}{{ . | urlize }}" class="mr-2 hover:text-stone-700 dark:hover:text-stone-300 transition-colors duration-200">{{ . }}</a>
       {{ end }}
     </div>
   {{ end }}
-
   {{ if .Draft }}
     <span class="px-2 py-1 text-xs font-medium bg-red-100 text-red-800 rounded-full dark:bg-red-900 dark:text-red-200">Draft</span>
   {{ end }}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'WassailNumbers', 'sans-serif';
+   src: url("/fonts/Astroviz.tff"); 
+   src: local(""),
+        url("/fonts/Astroviz.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/Astroviz.woff2") format("woff2"),
+        url("/fonts/Astroviz.woff")format("woff"),
+        url("/fonts/Astroviz.ttf")format("truetype"),
+        url("/fonts/Astroviz.svg#500")format("svg"); 
+    unicode-range: U+0030-0039; /*includes only the numbers */
+}
+
+body {
+  font-family: 'WassailNumbers', sans-serif;
+}
+
+.font-WassailNumbers {
+  font-family: WassailNumbers, sans-serif;
+}

@@ -4,14 +4,15 @@
     {{ range . }}
       {{ with index $links . }}
         <a
-          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+          class="m-1 inline-block min-w-[2.4rem] rounded p-1 text-center bg-dark-zinc-800 text-gray-300 hover:bg-dark-indigo-700 hover:text-gray-100 transition-colors duration-200"
           href="{{ printf .url $.Permalink $.Title }}"
           title="{{ i18n .title }}"
           aria-label="{{ i18n .title }}"
           target="_blank"
           rel="noopener noreferrer"
-          >{{ partial "icon.html" .icon }}</a
         >
+          {{ partial "icon.html" .icon }}
+        </a>
       {{ end }}
     {{ end }}
   </section>

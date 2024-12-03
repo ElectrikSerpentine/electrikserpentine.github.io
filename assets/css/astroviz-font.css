@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Astroviz";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/Astroviz.tff"); 
+  src: local(""),
+    url("/fonts/Astroviz.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Astroviz.woff2") format("woff2"),
+    url("/fonts/Astroviz.woff")format("woff"),
+    url("/fonts/Astroviz.ttf")format("truetype"),
+    url("/fonts/Astroviz.svg#500")format("svg"); 
+  font-display: swap;
+}
+
+body {
+  font-family: "Astroviz", sans-serif; 
+}
+
+.font-astroviz-medium {
+  font-family: Astroviz, sans-serif;
+}

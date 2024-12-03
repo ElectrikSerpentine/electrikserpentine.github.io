@@ -1,19 +1,15 @@
 
 @font-face {
-  font-family: 'Wassail', sans-serif;
+  font-family: 'Wassail', 'sans-serif';
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/Wassail-2O90d.otf');
   src: local(""),
        url("/fonts/Wassail.etf?#iefix") format("embedded-opentype"),
-       /* IE6-IE8 */ 
        url("/fonts/Wassail.woff2") format("woff2"),
-       /* Super Modern Browsers */ 
        url("/fonts/Wassail.woff")format("woff"), 
-       /* Modern Browsers */ 
        url("/fonts/Wassail.ttf")format("truetype"),
-       /* Safari, Android, iOS */ 
-       url("/fonts/Wassail.svg#400")format("svg"); /* Legacy iOS */;
+       url("/fonts/Wassail.svg#400")format("svg"); 
   font-display: swap;
 }
 
