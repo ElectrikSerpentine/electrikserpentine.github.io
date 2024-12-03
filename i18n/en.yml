@@ -1,0 +1,93 @@
+# Content
+- id: postedOnDate
+  translation: "Slithered onto the web on {{ . }}"
+
+- id: lastModified
+  translation: "(Last shed its skin on {{ . }})"
+
+- id: translationsLabel
+  translation: "Other tongues: "
+
+- id: translationsSeparator
+  translation: ", "
+
+- id: readMore
+  translation: "Uncoil More"
+
+- id: morePosts
+  translation: "More Serpentine Secrets"
+
+- id: olderPosts
+  translation: "Ancient Scrolls"
+
+- id: newerPosts
+  translation: "Fresh Scales"
+
+- id: previousPost
+  translation: "Previous Coil"
+
+- id: nextPost
+  translation: "Next Coil"
+
+- id: readTime
+  translation: "minutes to digest"
+
+- id: words
+  translation: "scales"
+
+# 404 page
+- id: pageNotFound
+  translation: "Oops! It seems you've slithered into uncharted territory. Don't worry, even the Shahmaran gets lost sometimes!"
+
+# Footer
+- id: poweredBy
+  translation: 'Powered by the mystic energies of <a href="https://gohugo.io">Hugo v{{ .Site.Hugo.Version }}</a> &nbsp;&bull;&nbsp; Adorned with the scales of <a href="https://github.com/apvarun/blist-hugo-theme">Blist</a>'
+
+# Navigation
+- id: toggleNavigation
+  translation: "Shed Navigation Skin"
+
+- id: languageSwitcherLabel
+  translation: "Forked Tongue"
+
+- id: gcseLabelShort
+  translation: "Seek Knowledge"
+
+- id: gcseLabelLong
+  translation: "Search the Coils of {{ .Site.Title }}"
+
+- id: gcseClose
+  translation: "Return to Nest"
+
+# Staticman
+- id: noComment
+  translation: "No whispers yet"
+
+- id: oneComment
+  translation: "hiss"
+
+- id: moreComment
+  translation: "hisses"
+
+- id: useMarkdown
+  translation: "You can use Serpentine Script (Markdown)"
+
+- id: yourName
+  translation: "Your serpent name"
+
+- id: yourEmail
+  translation: "Your scale pattern (email)"
+
+- id: yourWebsite
+  translation: "Your den on the web"
+
+# Delayed Disqus
+- id: show
+  translation: "Reveal"
+
+- id: comments
+  translation: "whispers" 
+
+# Related posts
+- id: seeAlso
+  translation: "Explore More Lairs"
