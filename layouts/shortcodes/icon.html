@@ -1,8 +1,20 @@
-{{ $icon := resources.Get (printf "icons/%s.svg" ($.Get 0)) }}
+{{ $iconName := $.Get 0 }}
+{{ $size := $.Get 1 | default "24" }}
+{{ $color := $.Get 2 | default "currentColor" }}
+{{ $icon := resources.Get (printf "icons/%s.svg" $iconName) }}
+
 {{ if $icon }}
-  <span class="icon relative inline-block align-text-bottom">
-    {{ $icon.Content | safeHTML }}
+  <span class="icon inline-flex items-center justify-center">
+    <svg 
+      class="fill-current"
+      width="{{ $size }}" 
+      height="{{ $size }}" 
+      viewBox="0 0 24 24" 
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {{ $icon.Content | replaceRE "fill=\"[^\"]*\"" (printf "fill=\"%s\"" $color) | safeHTML }}
+    </svg>
   </span>
 {{ else }}
-  {{ errorf `Shortcode "icon" error in "%s": Resource "%s" not found. Check the path is correct or remove the shortcode.` .Page.Path (printf "icons/%s.svg" ($.Get 0)) }}
+  {{ errorf `Shortcode "icon" error in "%s": Resource "icons/%s.svg" not found. Check the path is correct or remove the shortcode.` .Page.Path $iconName }}
 {{ end }}

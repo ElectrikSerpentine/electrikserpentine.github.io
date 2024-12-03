@@ -1,9 +1,9 @@
 {{ define "main" }}
 <div class="container mx-auto px-4 py-16 text-center">
   <div class="space-y-8">
-    <h1 class="text-6xl font-bold text-primary-500 dark:text-primary-400">404</h1>
-    <h2 class="text-4xl font-extrabold text-neutral-700 dark:text-neutral-300">Page Not Found</h2>
-    <p class="text-xl text-neutral-600 dark:text-neutral-400">Oops! It seems you've wandered into uncharted territory.</p>
+    <h1 class="text-6xl font-bold text-indigo-700 dark:text-indigo-400 font-chillight">404</h1>
+    <h2 class="text-4xl font-extrabold text-stone-800 dark:text-stone-200 font-occultOverture">Page Not Found</h2>
+    <p class="text-xl text-zinc-800 dark:text-zinc-400 font-astroviz">Oops! It seems you've slithered into uncharted territory.</p>
     
     <div class="my-8">
       {{ $image := resources.Get "/images/lost-serpent.png" }}
@@ -11,13 +11,13 @@
         {{ $image := $image.Resize "400x" }}
         <img src="{{ $image.RelPermalink }}" alt="Lost Serpent" class="mx-auto w-64 h-auto filter dark:invert">
       {{ else }}
-        <div class="text-5xl mb-4">🐍</div>
+        <div class="text-7xl mb-4">🐍</div>
       {{ end }}
     </div>
     
-    <p class="text-lg text-neutral-600 dark:text-neutral-400">Don't worry, even serpents get lost sometimes!</p>
+    <p class="text-lg text-zinc-700 dark:text-zinc-300 font-vanila">Don't worry, even serpents get lost sometimes!</p>
     
-    <a href="{{ "/" | relURL }}" class="inline-block px-6 py-3 mt-4 text-lg font-semibold text-white bg-primary-500 rounded-lg hover:bg-primary-600 transition duration-300 ease-in-out">
+    <a href="{{ "/" | relURL }}" class="inline-block px-6 py-3 mt-4 text-lg font-semibold text-white bg-fuchsia-900 dark:bg-pink-600 rounded-lg hover:bg-fuchsia-800 dark:hover:bg-pink-700 transition duration-300 ease-in-out font-wassail">
       Slither Back Home
     </a>
   </div>

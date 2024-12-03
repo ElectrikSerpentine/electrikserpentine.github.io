@@ -151,7 +151,12 @@ Follow me to connect">
 <style>
   @font-face {
     font-family: 'VANILA';
-    src: url('/fonts/VANILA.ttf');
+    src: local("");
+    src: url("/fonts/VANILA.eot?#iefix")format("embedded-opentype"),
+       url("/fonts/VANILA.woff")format("woff"),
+       url("/fonts/VANILA.woff2")format("woff2"),
+       url("/fonts/VANILA.ttf")format("truetype"),
+       url("/fonts/VANILA.svg#VANILA")format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -206,12 +211,12 @@ Follow me to connect">
 
       </div>
     
-    <h1 class="mt-0 text-5xl md:text-7xl font-extrabold text-gray-100 dark:text-gray-100 text-center leading-tight mb-10">
+    <h1 class="mt-0 text-5xl md:text-7xl font-extrabold italic font-vanila text-gray-100 dark:text-gray-100 text-center leading-tight mb-10">
       Instagram
     </h1>
   </header>
 
-  <section class="prose dark:prose-invert mt-8 max-w-prose mx-auto text-center">
+  <section class="prose dark:prose-invert font-extrabold  font-astroviz mt-8 max-w-prose mx-auto text-center">
     <div class="instagram-wrapper">
   <h1 class="instagram-title">Connect with Me on Instagram</h1>
   <div class="instagram-profile">

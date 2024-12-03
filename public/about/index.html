@@ -118,7 +118,12 @@
 <style>
   @font-face {
     font-family: 'VANILA';
-    src: url('/fonts/VANILA.ttf');
+    src: local("");
+    src: url("/fonts/VANILA.eot?#iefix")format("embedded-opentype"),
+       url("/fonts/VANILA.woff")format("woff"),
+       url("/fonts/VANILA.woff2")format("woff2"),
+       url("/fonts/VANILA.ttf")format("truetype"),
+       url("/fonts/VANILA.svg#VANILA")format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -160,12 +165,12 @@
 
       </div>
     
-    <h1 class="mt-0 text-5xl md:text-7xl font-extrabold text-gray-100 dark:text-gray-100 text-center leading-tight mb-10">
+    <h1 class="mt-0 text-5xl md:text-7xl font-extrabold italic font-vanila text-gray-100 dark:text-gray-100 text-center leading-tight mb-10">
       The Serpent
     </h1>
   </header>
 
-  <section class="prose dark:prose-invert mt-8 max-w-prose mx-auto text-center">
+  <section class="prose dark:prose-invert font-extrabold  font-astroviz mt-8 max-w-prose mx-auto text-center">
     <br>
  Hey,High, Hi. 
 <pre><code><figure class="my-4">
@@ -177,53 +182,51 @@
 	                loading="lazy"
 	        ></figure>
 </code></pre>
-<br>
-- the names Mila🖤 
-- Feline✌🏼😽 
-- 30 years old 
-- && living inside my head majority of the time. 
-- ♋︎ 
-- Currently developing this site just as a mean to improve && show off my skills.
-<br>
- 
- 
-     
- 
- 
- 
- 
- 
- <div class="audio-player">
-     <audio autoplay muted controls preload="metadata">
-         <source src="/media/NinaCobhamSola.mp3" type="audio/mpeg">
-         Your browser does not support the audio element.
-     </audio>
-     <button onclick="toggleMute(this)">Unmute</button>
- </div>
- 
- <script>
- function toggleMute(button) {
-     var audio = button.previousElementSibling;
-     if (audio.muted) {
-         audio.muted = false;
-         button.textContent = 'Mute';
-     } else {
-         audio.muted = true;
-         button.textContent = 'Unmute';
-     }
- }
- 
- 
- setTimeout(function() {
-     var audio = document.querySelector('.audio-player audio');
-     var button = document.querySelector('.audio-player button');
-     if (audio && button) {
-         audio.muted = false;
-         button.textContent = 'Mute';
-     }
- }, 1000); 
- </script>
- 
+<p>- the names Mila🖤 </p>
+<p>- Feline✌🏼😽 </p>
+<p>- 30 years old </p>
+<p>- && living inside my head majority of the time. </p>
+<p>- ♋︎ 
+<p>- Currently developing this site just as a mean to improve && show off my skills.</p>
+<p><center>
+
+    
+
+
+
+
+
+<div class="audio-player">
+    <audio autoplay muted controls preload="metadata">
+        <source src="/media/NinaCobhamSola.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button onclick="toggleMute(this)">Unmute</button>
+</div>
+
+<script>
+function toggleMute(button) {
+    var audio = button.previousElementSibling;
+    if (audio.muted) {
+        audio.muted = false;
+        button.textContent = 'Mute';
+    } else {
+        audio.muted = true;
+        button.textContent = 'Unmute';
+    }
+}
+
+
+setTimeout(function() {
+    var audio = document.querySelector('.audio-player audio');
+    var button = document.querySelector('.audio-player button');
+    if (audio && button) {
+        audio.muted = false;
+        button.textContent = 'Mute';
+    }
+}, 1000); 
+</script>
+ </center></p>
   </section>
 
   <footer class="pt-10 max-w-prose mx-auto text-base">

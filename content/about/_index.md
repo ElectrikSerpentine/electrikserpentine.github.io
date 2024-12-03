@@ -14,13 +14,11 @@ showComments: false
 	{{< image src="/images/intro.jpg" alt="Mila" >}}
 
 
-<br>
-- the names Mila🖤 
-- Feline✌🏼😽 
-- 30 years old 
-- && living inside my head majority of the time. 
-- ♋︎ 
-- Currently developing this site just as a mean to improve && show off my skills.
+<p>- the names Mila🖤 </p>
+<p>- Feline✌🏼😽 </p>
+<p>- 30 years old </p>
+<p>- && living inside my head majority of the time. </p>
+<p>- ♋︎ 
+<p>- Currently developing this site just as a mean to improve && show off my skills.</p>
 
-<br>
- {{< audio "NinaCobhamSola.mp3" >}} 
+<p><center>{{< audio "NinaCobhamSola.mp3" >}} </center></p>

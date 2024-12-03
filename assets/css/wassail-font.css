@@ -11,6 +11,7 @@
        url("/fonts/Wassail.ttf")format("truetype"),
        url("/fonts/Wassail.svg#400")format("svg"); 
   font-display: swap;
+  unicode-range: "U+0000-0030, U+0041-005A, U+0061-007A, U+00A0-00FF"; 
 }
 
 body {

@@ -1,10 +1,26 @@
 {{ define "main" }}
-<div class="sitemap">
-  <h1>Sitemap</h1>
-  {{ range .Site.Pages }}
-    <ul>
-      <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-    </ul>
-  {{ end }}
+<div class="container mx-auto px-4 py-16">
+  <h1 class="text-4xl font-bold mb-8 text-indigo-700 dark:text-indigo-400 font-chillight text-center">Sitemap</h1>
+  
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ range .Site.Pages }}
+      {{ if not .IsHome }}
+        <div class="bg-stone-100 dark:bg-stone-800 rounded-lg shadow-md p-4 hover:shadow-lg transition duration-300">
+          <a href="{{ .Permalink }}" class="block">
+            <h2 class="text-xl font-semibold mb-2 text-zinc-800 dark:text-zinc-200 font-occultOverture">
+              {{ .Title }}
+            </h2>
+            <p class="text-sm text-zinc-600 dark:text-zinc-400 font-astroviz">
+              {{ .Type | title }}
+              {{ if .Date }}
+                <span class="mx-2">•</span>
+                {{ .Date.Format "Jan 2, 2006" }}
+              {{ end }}
+            </p>
+          </a>
+        </div>
+      {{ end }}
+    {{ end }}
+  </div>
 </div>
 {{ end }}

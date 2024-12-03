@@ -2,14 +2,19 @@
 <style>
   @font-face {
     font-family: 'VANILA';
-    src: url('/fonts/VANILA.ttf');
+    src: local("");
+    src: url("/fonts/VANILA.eot?#iefix")format("embedded-opentype"),
+       url("/fonts/VANILA.woff")format("woff"),
+       url("/fonts/VANILA.woff2")format("woff2"),
+       url("/fonts/VANILA.ttf")format("truetype"),
+       url("/fonts/VANILA.svg#VANILA")format("svg");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   
   body {
-    font-family: 'VANILA', sans-serif;
+    font-family: 'VANILA';
     font-weight: 400;
     background-color: #1a1a1a;
     color: #f0f0f0;
@@ -18,7 +23,7 @@
   }
 
   .custom-heading {
-    font-family: 'VANILA', sans-serif;
+    font-family: 'VANILA';
     text-align: center;
     font-size: 3rem;
     color: #f0f0f0;

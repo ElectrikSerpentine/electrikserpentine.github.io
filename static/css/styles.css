@@ -20,170 +20,169 @@
 @import "assets/css/chillight-font.css";
 @import "assets/css/occult-overture-font.css";
 @import "assets/css/astroviz-font.css";
-@import "assets/css/wassailnumbers-font.css";
 
-:root {
-  --background-color: #1a1a1a;
-  --text-color: #f0f0f0;
-  --link-color: #63b3ed;
-  --link-hover-color: #90cdf4;
-}
+/* Base styles */
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-100 dark:bg-gray-950 dark:text-gray-100;
+  }
 
-body {
-  background-color: var(--background-color);
-  color: var(--text-color);
-}
-
-a {
-  color: var(--link-color);
-}
-
-a:hover {
-  color: var(--link-hover-color);
+  a {
+    @apply text-indigo-400 hover:text-indigo-300;
+  }
 }
 
 /* Table of Contents styles */
-details.toc[open] summary ~ * {
-  animation: slideUp 0.25s ease-in-out;
-}
-
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
+@layer components {
+  details.toc[open] summary ~ * {
+    animation: slideUp 0.25s ease-in-out;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-}
 
-details.toc[open] summary svg {
-  transform: rotate(180deg);
-  transition: transform 0.2s ease-in-out;
-}
+  details.toc[open] summary svg {
+    @apply transform rotate-180 transition duration-200 ease-in-out;
+  }
 
-details.toc > ul {
-  margin-left: 1rem;
-}
+  details.toc > ul {
+    @apply ml-4;
+  }
 
-details.toc ul {
-  list-style-type: none;
-  margin-top: 0.125rem !important;
-  margin-bottom: 0.125rem !important;
-}
+  details.toc ul {
+    @apply list-none my-0.5;
+  }
 
-details.toc ul li {
-  margin-top: 0.125rem !important;
-  margin-bottom: 0.125rem !important;
-}
+  details.toc ul li {
+    @apply my-0.5;
+  }
 
-details.toc ul li:before {
-  border-radius: 0;
-  background-color: #4a5568;
-}
+  details.toc ul li:before {
+    @apply rounded-none bg-gray-600 dark:bg-gray-400;
+  }
 
-details.toc ul li a {
-  text-decoration: none;
-  color: #4a5568;
-  font-size: 1rem;
-}
-
-.dark details.toc ul li:before {
-  background-color: #a0aec0;
-}
-
-.dark details.toc ul li a {
-  color: #e2e8f0;
+  details.toc ul li a {
+    @apply no-underline text-gray-600 dark:text-gray-300 text-base;
+  }
 }
 
 /* Custom font classes */
-.font-wassail {
-  font-family: 'Wassail', sans-serif;
-}
+@layer utilities {
+  .font-wassail {
+    font-family: 'Wassail', sans-serif;
+  }
 
-.font-vanila {
-  font-family: 'VANILA', sans-serif;
-}
+  .font-vanila {
+    font-family: 'VANILA', sans-serif;
+  }
 
-.font-occult-overture {
-  font-family: 'Occult Overture', sans-serif;
-}
+  .font-occult-overture {
+    font-family: 'Occult Overture', sans-serif;
+  }
 
-.font-chillight {
-  font-family: 'Chillight', sans-serif;
-}
+  .font-chillight {
+    font-family: 'Chillight', sans-serif;
+  }
 
-.font-astroviz {
-  font-family: 'Astroviz', sans-serif;
-}
-
-.font-wassailnumbers {
-  font-family: 'WassailNumbers';
+  .font-astroviz {
+    font-family: 'Astroviz', sans-serif;
+  }
 }
 
 /* Dark theme styles */
-.dark .prose {
-  color: var(--text-color);
+@layer base {
+  .dark .prose {
+    @apply text-gray-300;
+  }
+
+  .dark .prose a {
+    @apply text-indigo-400;
+  }
+
+  .dark .prose strong {
+    @apply text-gray-100;
+  }
+
+  .dark .prose h1, .dark .prose h2, .dark .prose h3, 
+  .dark .prose h4, .dark .prose h5, .dark .prose h6 {
+    @apply text-gray-100;
+  }
+
+  .dark .prose code {
+    @apply bg-gray-800 text-gray-100;
+  }
+
+  .dark .prose blockquote {
+    @apply bg-transparent border-l-4 border-gray-600 text-gray-300 p-2 my-4;
+  }
+
+  .dark .prose hr {
+    @apply border-gray-600;
+  }
+
+  .dark .prose table {
+    @apply border-gray-600;
+  }
+
+  .dark .prose thead {
+    @apply bg-gray-800 text-gray-100;
+  }
+
+  .dark .prose tbody tr {
+    @apply border-b border-gray-600;
+  }
 }
 
-.dark .prose a {
-  color: var(--link-color);
+/* glitch effect */
+.glitch-effect {
+  position: relative;
+  display: inline-block;
 }
 
-.dark .prose strong {
-  color: #e2e8f0;
+.glitch-effect::before,
+.glitch-effect::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
 }
 
-.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 {
-  color: #f7fafc;
+.glitch-effect::before {
+  left: 2px;
+  text-shadow: -2px 0 #ff00ea;
+  clip: rect(44px, 450px, 56px, 0);
 }
 
-.dark .prose code {
-  background-color: #2d3748;
-  color: #e2e8f0;
-}
-
-.dark .prose blockquote {
-  background-color: transparent;
-  border-left-color: #4a5568;
-  color: var(--text-color);
-  padding: 0.5em 1em;
-  margin: 1em 0;
-}
-
-.dark .prose hr {
-  border-color: #4a5568;
-}
-
-.dark .prose table {
-  border-color: #4a5568;
-}
-
-.dark .prose thead {
-  background-color: #2d3748;
-  color: #e2e8f0;
-}
-
-.dark .prose tbody tr {
-  border-bottom-color: #4a5568;
+.glitch-effect::after {
+  left: -2px;
+  text-shadow: -2px 0 #00ffff;
+  clip: rect(44px, 450px, 56px, 0);
 }
 
 /* Custom styles for pagination and social links */
-.pagination .btn,
-.social-links .btn-circle {
-  border-color: #a0aec0;
-  color: #a0aec0;
-  transition: all 0.3s ease-in-out;
-}
+@layer components {
+  .pagination .btn,
+  .social-links .btn-circle {
+    @apply border border-gray-400 text-gray-400 transition duration-300 ease-in-out;
+  }
 
-.pagination .btn:hover,
-.social-links .btn-circle:hover {
-  border-color: var(--link-color);
-  background-color: var(--link-color);
-  color: var(--background-color);
-}
+  .pagination .btn:hover,
+  .social-links .btn-circle:hover {
+    @apply border-indigo-400 bg-indigo-400 text-gray-900;
+  }
 
-.social-links .btn-circle:hover {
-  transform: scale(1.1);
+  .social-links .btn-circle:hover {
+    @apply transform scale-110;
+  }
 }
